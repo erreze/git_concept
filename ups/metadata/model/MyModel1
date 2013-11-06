@@ -1,0 +1,95 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyModel1"
+    },
+    "designerId": "adde2d40-5107-4acb-aa1e-3b65f7dd9ea6",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "type": "string"
+            },
+            "designerId": "6f1542c4-e560-4774-b2a1-eee61a46f988"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "format",
+                "designer|params": [
+                    "obj"
+                ],
+                "implHandler": [
+                    "console.log(obj);",
+                    "for(var i in obj){",
+                    "",
+                    "    if(typeof obj[i] == \"string\"){",
+                    "        obj[i] = Ext.util.Format.htmlEncode(obj[i]);",
+                    "    }",
+                    "    else if(typeof obj[i] == \"object\"){",
+                    "        this.getFormatterObject(obj[i]);",
+                    "    }",
+                    "}"
+                ]
+            },
+            "designerId": "6da27ff8-852c-4af4-89c5-f9e3fa92f040"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "designer|params": [
+                    "obj"
+                ],
+                "implHandler": [
+                    "console.log(\"obj\", this);",
+                    "console.log(\"my model\",this.raw);",
+                    "//this.format(this.raw);",
+                    "",
+                    "this.FormatterObject(this.raw);",
+                    ""
+                ]
+            },
+            "designerId": "f467337c-820e-4449-a8c1-c5c66b2dd3d9"
+        },
+        {
+            "type": "processcfgfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "processMyModel1",
+                "designer|params": [
+                    "config"
+                ],
+                "implHandler": [
+                    "console.log(\"config\");"
+                ]
+            },
+            "designerId": "bf508283-6578-4d5f-bbc1-bda43ad60be0"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "BaseModel",
+        "mixins": null
+    },
+    "designerId": "ea703676-01d9-4b8e-a467-0d77ebacc307",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "implHandler": [
+                    "console.log(\"init model\");",
+                    "this.FormatterObject(this.raw);"
+                ]
+            },
+            "designerId": "8d9a0b03-c451-498e-b18b-b1d37d572979"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "FormatterObject",
+                "designer|params": [
+                    "obj"
+                ],
+                "implHandler": [
+                    "for(var i in obj){",
+                    "            if(typeof obj[i] == \"string\"){",
+                    "                obj[i] = Ext.util.Format.htmlEncode(obj[i]);",
+                    "            }",
+                    "            else if(typeof obj[i] == \"object\"){",
+                    "                this.getFormatterObject(obj[i]);",
+                    "            }",
+                    "        }"
+                ]
+            },
+            "designerId": "51bb112c-044f-4b13-97e4-a7f2a78b365a"
+        }
+    ]
+}

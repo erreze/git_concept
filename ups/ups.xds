@@ -21,11 +21,11 @@
         },
         "ea703676-01d9-4b8e-a467-0d77ebacc307": {
             "paths": [
-                "metadata/model/MyClass",
-                "app/model/override/MyClass.js",
-                "app/model/MyClass.js"
+                "metadata/model/BaseModel",
+                "app/model/override/BaseModel.js",
+                "app/model/BaseModel.js"
             ],
-            "className": "MyClass"
+            "className": "BaseModel"
         },
         "e20f0f84-e835-48cf-839b-8533b078df56": {
             "paths": [
@@ -35,16 +35,44 @@
                 "app/view/Viewport.js"
             ],
             "className": "MyGridPanel"
+        },
+        "adde2d40-5107-4acb-aa1e-3b65f7dd9ea6": {
+            "paths": [
+                "metadata/model/MyModel1",
+                "app/model/override/MyModel1.js",
+                "app/model/MyModel1.js"
+            ],
+            "className": "MyModel1"
+        },
+        "72b2d5c7-920c-4b50-adfc-a60a8cae64fa": {
+            "paths": [
+                "metadata/store/MyJsonStore",
+                "app/store/override/MyJsonStore.js",
+                "app/store/MyJsonStore.js"
+            ],
+            "className": "MyJsonStore"
+        },
+        "bc107e0d-a9eb-4f4f-b97e-1b9b9d11c2bc": {
+            "paths": [
+                "metadata/model/MyModel2",
+                "app/model/override/MyModel2.js",
+                "app/model/MyModel2.js"
+            ],
+            "className": "MyModel2"
         }
     },
     "viewOrderMap": {
         "view": [
             "e20f0f84-e835-48cf-839b-8533b078df56"
         ],
-        "store": [],
+        "store": [
+            "72b2d5c7-920c-4b50-adfc-a60a8cae64fa"
+        ],
         "controller": [],
         "model": [
-            "ea703676-01d9-4b8e-a467-0d77ebacc307"
+            "ea703676-01d9-4b8e-a467-0d77ebacc307",
+            "adde2d40-5107-4acb-aa1e-3b65f7dd9ea6",
+            "bc107e0d-a9eb-4f4f-b97e-1b9b9d11c2bc"
         ],
         "resource": [
             "7ae3c32b-0fde-481b-bdc0-3b91c71a55e2",

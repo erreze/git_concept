@@ -1,0 +1,9 @@
+{
+    "Customer" : [{ 
+        "name" : "Juan"
+    },{ 
+        "name" : "Alberto"
+    },{ 
+        "name" : "<b>Ruiz<b>"
+    }]
+}

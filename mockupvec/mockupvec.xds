@@ -1,0 +1,77 @@
+{
+    "name": "mockupvec",
+    "settings": {},
+    "xdsVersion": "2.2.3",
+    "xdsBuild": 1039,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "90086192-6446-4d0e-b502-349a09141e0a": {
+            "paths": [
+                "metadata/view/MyViewport",
+                "app/view/override/MyViewport.js",
+                "app/view/MyViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyViewport"
+        },
+        "1ff7b364-c76f-414e-94e5-a0443cec1274": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "f4564b79-4720-420a-99a7-60109887e889": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "0eddcded-28ed-48d8-9a5a-9cb2332c6dae": {
+            "paths": [
+                "metadata/store/MyJsonStore",
+                "app/store/override/MyJsonStore.js",
+                "app/store/MyJsonStore.js"
+            ],
+            "className": "MyJsonStore"
+        },
+        "617f4024-0e36-4d7d-a02e-a8421cda1c5c": {
+            "paths": [
+                "metadata/model/MyModel",
+                "app/model/override/MyModel.js",
+                "app/model/MyModel.js"
+            ],
+            "className": "MyModel"
+        },
+        "c34d36ff-dfa8-40de-97ad-c2b08790e943": {
+            "paths": [
+                "metadata/controller/MainController",
+                "app/controller/override/MainController.js",
+                "app/controller/MainController.js"
+            ],
+            "className": "MainController"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "90086192-6446-4d0e-b502-349a09141e0a"
+        ],
+        "store": [
+            "0eddcded-28ed-48d8-9a5a-9cb2332c6dae"
+        ],
+        "controller": [
+            "c34d36ff-dfa8-40de-97ad-c2b08790e943"
+        ],
+        "model": [
+            "617f4024-0e36-4d7d-a02e-a8421cda1c5c"
+        ],
+        "resource": [
+            "1ff7b364-c76f-414e-94e5-a0443cec1274",
+            "f4564b79-4720-420a-99a7-60109887e889"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

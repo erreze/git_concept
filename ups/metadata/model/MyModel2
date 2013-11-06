@@ -1,0 +1,36 @@
+{
+    "type": "class",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "fields": [
+            " [",
+            "        {",
+            "            name: 'name',",
+            "            type: 'string'",
+            "        }",
+            "]"
+        ],
+        "designer|userClassName": "MyModel2",
+        "extend": "MyApp.model.BaseModel"
+    },
+    "configAlternates": {
+        "fields": "array"
+    },
+    "designerId": "bc107e0d-a9eb-4f4f-b97e-1b9b9d11c2bc",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "fields",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "sape",
+            "type": "string"
+        }
+    ]
+}

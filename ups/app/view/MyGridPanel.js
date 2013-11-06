@@ -19,6 +19,7 @@ Ext.define('MyApp.view.MyGridPanel', {
     height: 250,
     width: 400,
     title: 'My Grid Panel',
+    store: 'MyJsonStore',
 
     initComponent: function() {
         var me = this;
@@ -27,23 +28,8 @@ Ext.define('MyApp.view.MyGridPanel', {
             columns: [
                 {
                     xtype: 'gridcolumn',
-                    dataIndex: 'string',
-                    text: 'String'
-                },
-                {
-                    xtype: 'numbercolumn',
-                    dataIndex: 'number',
-                    text: 'Number'
-                },
-                {
-                    xtype: 'datecolumn',
-                    dataIndex: 'date',
-                    text: 'Date'
-                },
-                {
-                    xtype: 'booleancolumn',
-                    dataIndex: 'bool',
-                    text: 'Boolean'
+                    dataIndex: 'name',
+                    text: 'name'
                 }
             ],
             plugins: [

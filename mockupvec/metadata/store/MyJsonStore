@@ -1,0 +1,43 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "MyModel",
+        "storeId": "MyJsonStore",
+        "designer|userClassName": "MyJsonStore"
+    },
+    "designerId": "0eddcded-28ed-48d8-9a5a-9cb2332c6dae",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://localhost/git_concept/mockupvec/data/tickets.json"
+            },
+            "designerId": "886b2f95-d656-47bc-96bf-ea71f6262a16",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "tickets"
+                    },
+                    "designerId": "afd59500-36d8-4157-af4a-bb2e48f3d6b2"
+                }
+            ]
+        }
+    ]
+}

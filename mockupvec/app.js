@@ -20,14 +20,17 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'MyModel1'
+        'MyModel'
     ],
     stores: [
         'MyJsonStore'
     ],
     views: [
-        'MyGridPanel'
+        'MyViewport'
     ],
     autoCreateViewport: true,
+    controllers: [
+        'MainController'
+    ],
     name: 'MyApp'
 });

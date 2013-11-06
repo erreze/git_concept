@@ -10,7 +10,8 @@
         "width": 400,
         "designer|userClassName": "MyGridPanel",
         "designer|initialView": true,
-        "title": "My Grid Panel"
+        "title": "My Grid Panel",
+        "store": "MyJsonStore"
     },
     "designerId": "e20f0f84-e835-48cf-839b-8533b078df56",
     "cn": [
@@ -22,49 +23,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "dataIndex": "string",
-                "text": "String"
+                "designer|displayName": "name",
+                "designer|createAlias": "",
+                "dataIndex": "name",
+                "text": "name"
             },
             "designerId": "84d79507-60d8-4826-b0a4-5129cacc035f"
-        },
-        {
-            "type": "Ext.grid.column.Number",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "dataIndex": "number",
-                "text": "Number"
-            },
-            "designerId": "0fb35f6e-25d2-4ac6-b16e-8b52aaf4597b"
-        },
-        {
-            "type": "Ext.grid.column.Date",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "dataIndex": "date",
-                "text": "Date"
-            },
-            "designerId": "573d3245-ecc2-4934-83f3-bf8c184e9977"
-        },
-        {
-            "type": "Ext.grid.column.Boolean",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "dataIndex": "bool",
-                "text": "Boolean"
-            },
-            "designerId": "251b20d1-8ca6-4b92-b3d3-2b5dd26ad960"
         },
         {
             "type": "Ext.grid.View",
