@@ -1,0 +1,17 @@
+{
+    "type": "class",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyClass",
+        "mixins": [
+            "{",
+            "    PruebaClass : 'PruebaClass'",
+            "}"
+        ]
+    },
+    "designerId": "ea703676-01d9-4b8e-a467-0d77ebacc307"
+}

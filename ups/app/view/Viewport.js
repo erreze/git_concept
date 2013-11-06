@@ -14,6 +14,6 @@
  */
 
 Ext.define('MyApp.view.Viewport', {
-    extend: 'MyApp.view.MyPanel',
+    extend: 'MyApp.view.MyGridPanel',
     renderTo: Ext.getBody()
 });

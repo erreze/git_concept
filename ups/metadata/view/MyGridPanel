@@ -1,0 +1,106 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 250,
+        "width": 400,
+        "designer|userClassName": "MyGridPanel",
+        "designer|initialView": true,
+        "title": "My Grid Panel"
+    },
+    "designerId": "e20f0f84-e835-48cf-839b-8533b078df56",
+    "cn": [
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "string",
+                "text": "String"
+            },
+            "designerId": "84d79507-60d8-4826-b0a4-5129cacc035f"
+        },
+        {
+            "type": "Ext.grid.column.Number",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "number",
+                "text": "Number"
+            },
+            "designerId": "0fb35f6e-25d2-4ac6-b16e-8b52aaf4597b"
+        },
+        {
+            "type": "Ext.grid.column.Date",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "date",
+                "text": "Date"
+            },
+            "designerId": "573d3245-ecc2-4934-83f3-bf8c184e9977"
+        },
+        {
+            "type": "Ext.grid.column.Boolean",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "bool",
+                "text": "Boolean"
+            },
+            "designerId": "251b20d1-8ca6-4b92-b3d3-2b5dd26ad960"
+        },
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "e974635a-a591-477f-aa50-5b5e07efa735"
+        },
+        {
+            "type": "Ext.grid.plugin.BufferedRenderer",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": "Ext.grid.plugin.BufferedRenderer",
+            "designerId": "8de66a73-6766-4a2d-a36e-d7286e653c0d",
+            "cn": [
+                {
+                    "type": "basicfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "init",
+                        "implHandler": [
+                            "console.log(\"init plugin\");",
+                            ""
+                        ]
+                    },
+                    "designerId": "3207c178-0e9d-4949-af51-fdcc1ef18eba"
+                }
+            ]
+        }
+    ]
+}

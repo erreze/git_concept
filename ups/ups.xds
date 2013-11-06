@@ -13,29 +13,39 @@
             ],
             "className": "Library"
         },
-        "32b9e143-6fed-4325-b678-3da6b9cb08fb": {
-            "paths": [
-                "metadata/view/MyPanel",
-                "app/view/override/MyPanel.js",
-                "app/view/MyPanel.js",
-                "app/view/Viewport.js"
-            ],
-            "className": "MyPanel"
-        },
         "52264590-c42e-46f6-bacd-f36df1f735f9": {
             "paths": [
                 "metadata/resource/css"
             ],
             "className": "css"
+        },
+        "ea703676-01d9-4b8e-a467-0d77ebacc307": {
+            "paths": [
+                "metadata/model/MyClass",
+                "app/model/override/MyClass.js",
+                "app/model/MyClass.js"
+            ],
+            "className": "MyClass"
+        },
+        "e20f0f84-e835-48cf-839b-8533b078df56": {
+            "paths": [
+                "metadata/view/MyGridPanel",
+                "app/view/override/MyGridPanel.js",
+                "app/view/MyGridPanel.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyGridPanel"
         }
     },
     "viewOrderMap": {
         "view": [
-            "32b9e143-6fed-4325-b678-3da6b9cb08fb"
+            "e20f0f84-e835-48cf-839b-8533b078df56"
         ],
         "store": [],
         "controller": [],
-        "model": [],
+        "model": [
+            "ea703676-01d9-4b8e-a467-0d77ebacc307"
+        ],
         "resource": [
             "7ae3c32b-0fde-481b-bdc0-3b91c71a55e2",
             "52264590-c42e-46f6-bacd-f36df1f735f9"
