@@ -1,0 +1,47 @@
+{
+    "name": "ups",
+    "settings": {},
+    "xdsVersion": "2.2.3",
+    "xdsBuild": 1039,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "7ae3c32b-0fde-481b-bdc0-3b91c71a55e2": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "32b9e143-6fed-4325-b678-3da6b9cb08fb": {
+            "paths": [
+                "metadata/view/MyPanel",
+                "app/view/override/MyPanel.js",
+                "app/view/MyPanel.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyPanel"
+        },
+        "52264590-c42e-46f6-bacd-f36df1f735f9": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "32b9e143-6fed-4325-b678-3da6b9cb08fb"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "7ae3c32b-0fde-481b-bdc0-3b91c71a55e2",
+            "52264590-c42e-46f6-bacd-f36df1f735f9"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
