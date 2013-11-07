@@ -1,13 +1,13 @@
 {
     "tickets" : [{ 
-        flag : 1,
-        ticketNumber : "2013110400023",
-        status : "OPEN-TO BE WORKED",
-        serviceID : "8002174253",
-        issueType : "Request for information",
-        productType : "DIALTF",
-        createdDate : "11/04/2013",
-        primaryContact : "Jairo Sencion"
+        "flag" : 1,
+        "ticketNumber" : "2013110400023",
+        "status" : "OPEN-TO BE WORKED",
+        "serviceID" : "8002174253",
+        "issueType" : "Request for information",
+        "productType" : "DIALTF",
+        "createdDate" : "11/04/2013",
+        "primaryContact" : "Jairo Sencion"
 
     },{
         "flag" : 1,

@@ -126,9 +126,9 @@
                                         "implHandler": [
                                             "console.log( record.data);",
                                             "if ( record.data.flag == 1 ){",
-                                            "\treturn '<img class = \"fotoGrid\" src=\"http://localhost/git_concept/mockupvec/static/images/flagOn.png\">';",
+                                            "    return '<img class = \"fotoGrid\" src=\"http://localhost/git_concept/mockupvec/static/images/flagOn.png\">';",
                                             "}else{",
-                                            "\treturn '<img class = \"fotoGrid\" src=\"http://localhost/git_concept/mockupvec/static/images/flagOff.png\">';",
+                                            "    return '<img class = \"fotoGrid\" src=\"http://localhost/git_concept/mockupvec/static/images/flagOff.png\">';",
                                             "}",
                                             ""
                                         ]

@@ -1,0 +1,44 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "MyModel",
+        "storeId": "storeTickets",
+        "designer|userClassName": "MyJsonStore",
+        "pageSize": 10
+    },
+    "designerId": "14537c4a-86b8-47e5-8a96-9b376db39108",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/tickets.json"
+            },
+            "designerId": "39caf539-800c-438f-80a3-d4722b139d75",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "tickets"
+                    },
+                    "designerId": "7ff64f29-d88e-4b6b-9883-4d15db659af1"
+                }
+            ]
+        }
+    ]
+}

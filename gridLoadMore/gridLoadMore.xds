@@ -1,0 +1,80 @@
+{
+    "name": "gridLoadMore",
+    "settings": {
+        "urlPrefix": "http://localhost/git_concept/gridLoadMore",
+        "exportPath": ""
+    },
+    "xdsVersion": "2.2.3",
+    "xdsBuild": 1039,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "bbce5fd1-23d1-4cfe-9256-72b267e6e6ac": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "5d3f169c-8ef7-41c8-a56a-ac0e068ef5d9": {
+            "paths": [
+                "metadata/view/MyViewport",
+                "app/view/override/MyViewport.js",
+                "app/view/MyViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyViewport"
+        },
+        "14537c4a-86b8-47e5-8a96-9b376db39108": {
+            "paths": [
+                "metadata/store/MyJsonStore",
+                "app/store/override/MyJsonStore.js",
+                "app/store/MyJsonStore.js"
+            ],
+            "className": "MyJsonStore"
+        },
+        "3b9be18a-c5ff-451f-942e-cc64372ec898": {
+            "paths": [
+                "metadata/model/MyModel",
+                "app/model/override/MyModel.js",
+                "app/model/MyModel.js"
+            ],
+            "className": "MyModel"
+        },
+        "a36f31d6-6156-4620-8328-ef34f5bde8c8": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "57addca7-8e84-4d3b-9b74-3d552a9153da": {
+            "paths": [
+                "metadata/controller/Main",
+                "app/controller/override/Main.js",
+                "app/controller/Main.js"
+            ],
+            "className": "Main"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "5d3f169c-8ef7-41c8-a56a-ac0e068ef5d9"
+        ],
+        "store": [
+            "14537c4a-86b8-47e5-8a96-9b376db39108"
+        ],
+        "controller": [
+            "57addca7-8e84-4d3b-9b74-3d552a9153da"
+        ],
+        "model": [
+            "3b9be18a-c5ff-451f-942e-cc64372ec898"
+        ],
+        "resource": [
+            "bbce5fd1-23d1-4cfe-9256-72b267e6e6ac",
+            "a36f31d6-6156-4620-8328-ef34f5bde8c8"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

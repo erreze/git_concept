@@ -1,0 +1,110 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyModel"
+    },
+    "designerId": "3b9be18a-c5ff-451f-942e-cc64372ec898",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "flag"
+            },
+            "designerId": "06e9a24e-b27a-419f-b8c5-fa435a0b18eb"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ticketNumber"
+            },
+            "designerId": "10a99735-bb99-414d-ad3a-83a6175bad51"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "status"
+            },
+            "designerId": "00643bbe-b2ee-4b51-8c60-361cdec3c378"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "serviceID"
+            },
+            "designerId": "6b8088e9-56c3-47b6-ab8b-c4eefb5cdcdc"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "issueType"
+            },
+            "designerId": "a4fb4c62-134e-4c54-91a8-ed5bb227edb7"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "productType"
+            },
+            "designerId": "6c97736d-3852-4cb3-8183-fbba4b1f963c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "createdDate"
+            },
+            "designerId": "491cc0db-e7d4-40c2-8a8f-e4db530d08bb"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "primaryContact"
+            },
+            "designerId": "4832fee1-29f1-4745-888b-696638d2ee39"
+        }
+    ]
+}

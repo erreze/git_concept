@@ -1,0 +1,122 @@
+{
+    "type": "class",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "width": 100,
+        "height": 100,
+        "border": true,
+        "designer|userClassName": "MyClass",
+        "mixins": [
+            "{",
+            "    floating : \"Ext.util.Floating\",",
+            "    observable : \"Ext.util.Observable\"",
+            "}"
+        ]
+    },
+    "configAlternates": {
+        "height": "number",
+        "width": "number",
+        "border": "boolean"
+    },
+    "designerId": "058e98c6-2644-4e87-a0ac-c2aacce03937",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "width",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "height",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "border",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "constructor",
+                "designer|params": [
+                    "options"
+                ],
+                "implHandler": [
+                    "Ext.apply(this.options);",
+                    "this.id = Ext.id(null,\"icon-\");",
+                    "this.addEvents(\"moved\", \"created\");",
+                    "",
+                    "if (this.renderTo){",
+                    "\t\tthis.render(this.renderTo);",
+                    "    \tdelete this.renderTo;",
+                    "}",
+                    "this.mixins.floating.constructor.call(this);",
+                    "this.mixins.observable.constructor.cal(this);"
+                ]
+            },
+            "designerId": "ae6a6149-01e5-4d61-9826-4d749de0cd09"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "render",
+                "designer|params": [
+                    "where"
+                ],
+                "implHandler": [
+                    "if(where){",
+                    "\t\tthis.container = Ext.get(where);\t\t\t// 1",
+                    "\t\tthis.el = Ext.core.DomHelper.append(where,{\t// 2",
+                    "\t\t\tid\t: this.id,",
+                    "\t\t\ttag\t: \"div\"",
+                    "\t\t});",
+                    "\t\tthis.el = Ext.get(this.el);",
+                    "\t\tthis.el.setStyle({\t\t\t\t\t// 3",
+                    "\t\t\twidth\t: this.width?this.width+\"px\":\"auto\",",
+                    "\t\t\theight\t: this.height?this.height+\"px\":\"auto\",",
+                    "\t\t\tborder\t: this.border?\"1px solid #aaa\":\"none\",",
+                    "\t\t\tbackground\t: \"#eee\"",
+                    "\t\t});",
+                    "\t}"
+                ]
+            },
+            "designerId": "441c95c2-9198-4794-9548-52ea2f7da015"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "setPagePosition",
+                "designer|params": [
+                    "xy"
+                ],
+                "implHandler": [
+                    "this.el.setLeftTop(xy[0]+\"px\",xy[1]+\"px\");",
+                    "this.fireEvent(\"moved\",xy);"
+                ]
+            },
+            "designerId": "6bbfee2b-d317-49da-b4c3-3de38b7040df"
+        }
+    ]
+}

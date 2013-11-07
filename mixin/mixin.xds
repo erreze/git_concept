@@ -1,0 +1,39 @@
+{
+    "name": "mixin",
+    "settings": {},
+    "xdsVersion": "2.2.3",
+    "xdsBuild": 1039,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "058e98c6-2644-4e87-a0ac-c2aacce03937": {
+            "paths": [
+                "metadata/model/MyClass",
+                "app/model/override/MyClass.js",
+                "app/model/MyClass.js"
+            ],
+            "className": "MyClass"
+        },
+        "ce9caa89-c1be-453c-9091-4656098e9641": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [],
+        "store": [],
+        "controller": [],
+        "model": [
+            "058e98c6-2644-4e87-a0ac-c2aacce03937"
+        ],
+        "resource": [
+            "ce9caa89-c1be-453c-9091-4656098e9641"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

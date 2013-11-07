@@ -1,0 +1,635 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyViewport",
+        "designer|initialView": true,
+        "layout": "card"
+    },
+    "designerId": "5d3f169c-8ef7-41c8-a56a-ac0e068ef5d9",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "cls": "containerCls",
+                "id": "mainContainer",
+                "autoScroll": true,
+                "layout": "absolute"
+            },
+            "designerId": "9def16ff-8754-4506-96a4-094cd2e16ffa",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": -2,
+                        "layout|y": 0,
+                        "height": 80
+                    },
+                    "designerId": "cdd1c8a5-de62-44d1-864d-24c62fed6d76",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "id": "ex1",
+                                "text": "Example 1"
+                            },
+                            "designerId": "504bb5ca-da81-4979-a76e-80214146696b"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "id": "ex2",
+                                "text": "Example 2"
+                            },
+                            "designerId": "4e2644cc-cea9-47c9-8fa4-767d09de5adb"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "id": "ex3",
+                                "text": "Example 3"
+                            },
+                            "designerId": "3d09aa95-1787-4224-869a-dfcba021e243"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "gridClsContainer",
+                        "id": "containerGrid",
+                        "designer|displayName": "containerGrids",
+                        "autoScroll": true,
+                        "layout": "card"
+                    },
+                    "designerId": "a9c0a00c-c068-42b7-859b-6457eb7db018",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "title": "Example 1",
+                                "store": "MyJsonStore"
+                            },
+                            "designerId": "99344e71-2be4-4819-9b4e-cfca96853522",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 30,
+                                        "dataIndex": "flag",
+                                        "text": "Flag"
+                                    },
+                                    "designerId": "db51942f-1da2-4b48-ba8b-8b43eddb5aeb"
+                                },
+                                {
+                                    "type": "Ext.grid.View",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "designerId": "9bb4a59f-9280-42ee-8099-9e56df5d272d"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "ticketNumber",
+                                        "text": "Ticket Numer"
+                                    },
+                                    "designerId": "e3215bb9-b169-493f-9a0f-5f18a44a596f"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 150,
+                                        "dataIndex": "status",
+                                        "text": "Status"
+                                    },
+                                    "designerId": "a01a0ac4-4c35-4252-ace9-3eb51143a19e"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "serviceID",
+                                        "text": "Service ID"
+                                    },
+                                    "designerId": "721a53a2-239a-4c01-909e-d531ee76f8f1"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 150,
+                                        "dataIndex": "issueType",
+                                        "text": "Issuetype"
+                                    },
+                                    "designerId": "16b19a1f-1db9-4ab7-8332-e5e6f7669f82"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "productType",
+                                        "text": "Producttype"
+                                    },
+                                    "designerId": "887503ed-54dd-4463-b4f3-4da5362c8ba9"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "createdDate",
+                                        "text": "createdDate"
+                                    },
+                                    "designerId": "027edc24-04f8-4626-8171-2a89c759562a"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "primaryContact",
+                                        "text": "primaryContact"
+                                    },
+                                    "designerId": "8db3a2c5-2b31-4766-9aa3-1f7c1ff68d5b"
+                                },
+                                {
+                                    "type": "Ext.toolbar.Paging",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "bottom",
+                                        "width": 360,
+                                        "displayInfo": true,
+                                        "store": "MyJsonStore"
+                                    },
+                                    "designerId": "7d316181-4e8c-4a30-a6cd-42fe3e162a12"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "maxHeight": null,
+                                "autoScroll": true,
+                                "title": "Example 2",
+                                "store": "MyJsonStore"
+                            },
+                            "designerId": "256dd202-7ab9-40cc-ae98-31b6abf49aa2",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 30,
+                                        "dataIndex": "flag",
+                                        "text": "Flag"
+                                    },
+                                    "designerId": "304f0ac4-ca30-496e-98f2-2f8e2a6529ac"
+                                },
+                                {
+                                    "type": "Ext.grid.View",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "designerId": "55c0c61f-c17c-41b1-bd89-30268a7579ab"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "ticketNumber",
+                                        "text": "Ticket Numer"
+                                    },
+                                    "designerId": "f741745a-1fe9-4985-a1c7-15d6d496362c"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 150,
+                                        "dataIndex": "status",
+                                        "text": "Status"
+                                    },
+                                    "designerId": "149b7573-95b4-45bf-85d0-8e68e5a50632"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "serviceID",
+                                        "text": "Service ID"
+                                    },
+                                    "designerId": "2acfc3b4-8a3d-4b41-8cef-01abc2c24303"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 150,
+                                        "dataIndex": "issueType",
+                                        "text": "Issuetype"
+                                    },
+                                    "designerId": "66ebecf7-d25d-4821-9683-5fb584387878"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "productType",
+                                        "text": "Producttype"
+                                    },
+                                    "designerId": "185ca883-a8a0-4778-bcc3-d0cde53ea93a"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "createdDate",
+                                        "text": "createdDate"
+                                    },
+                                    "designerId": "d5726c18-473d-43c9-bd4b-16b2704e5bac"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "primaryContact",
+                                        "text": "primaryContact"
+                                    },
+                                    "designerId": "63d5c09a-7827-41d0-bd39-3aeb08efa1a6"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "bottom",
+                                        "id": "loadMore",
+                                        "padding": "0 20 0 20",
+                                        "width": 100,
+                                        "iconAlign": "top",
+                                        "text": "LoadMore"
+                                    },
+                                    "designerId": "5e62abdc-5765-4e5f-b31c-01ea878b1036"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "title": "Example 3",
+                                "store": "MyJsonStore"
+                            },
+                            "designerId": "8fd460b6-dccf-4e1c-8a7b-5f3c66a221ce",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.View",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "designerId": "2a4fe78f-bff2-42c8-9386-c3d245eb09cb"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "ticketNumber",
+                                        "text": null,
+                                        "flex": 1
+                                    },
+                                    "designerId": "b084365e-537c-4b21-a0ee-bb9e644c91ed",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "renderer",
+                                                "designer|params": [
+                                                    "value",
+                                                    "metaData",
+                                                    "record",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "store",
+                                                    "view"
+                                                ],
+                                                "implHandler": [
+                                                    "var data  = record.data ; ",
+                                                    "                                                return Ext.String.format('<table class=\"rowticket\">'    ",
+                                                    "                                                +   ' <tr class=\"rowticketissue\">'",
+                                                    "                                                +    '    <td><span class=\"rowticketid\">[{0}]</span>{1}</td>'",
+                                                    "                                                +   ' </tr>'",
+                                                    "                                                +   ' <tr>'",
+                                                    "                                                +    '    <td>{2}</td>'",
+                                                    "                                                +     '   <td><img class = \"fotoGrid\" src=\"http://localhost/git_concept/mockupvec/static/images/flagOn.png\" height=\"15\" width=\"15\"></td>'",
+                                                    "                                                +'        </tr>'",
+                                                    "                                                + '   <tr>'",
+                                                    "                                                +  '      <td><span class=\"subrow\">{3}</span></td>'",
+                                                    "                                                +        '</tr>'",
+                                                    "                                                + '   <tr class=\"rowticketnumber\">'",
+                                                    "                                                +  '      <td> '",
+                                                    "                                                +   '         <pre class=\"rowlist\">Ticket #<a href=\"#\" class=\"otherPage\">{4}</a>  | Created {5}  |  <a href=\"#\" class=\"otherPage\">{6}</a></pre>'",
+                                                    "                                                +    '    </td>'",
+                                                    "                                                +   ' </tr>'",
+                                                    "                                                +    ''",
+                                                    "                                                +'</table>', data.serviceID,data.issueType,data.status,data.productType,data.ticketNumber,data.createdDate,data.primaryContact);"
+                                                ]
+                                            },
+                                            "designerId": "a59544df-5d42-48c8-ac88-33baafb70a5b"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "dockedItems",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "bottom",
+                                        "id": "moreB",
+                                        "width": 100,
+                                        "text": "More :)"
+                                    },
+                                    "designerId": "df35350d-04d4-4e26-a53b-97f084ef2da6"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "title": "Example 4",
+                                "store": "MyJsonStore"
+                            },
+                            "designerId": "ac6d7020-ca80-41af-8256-83936b2315fb",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 30,
+                                        "dataIndex": "flag",
+                                        "text": "Flag"
+                                    },
+                                    "designerId": "8a31720f-efee-46e7-9905-b825871f084c"
+                                },
+                                {
+                                    "type": "Ext.grid.View",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "designerId": "4a439a07-428a-4f5d-8d08-1b354613004c"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "ticketNumber",
+                                        "text": "Ticket Numer"
+                                    },
+                                    "designerId": "06dbaae4-7bc5-4c88-a2be-e68d6583fb89"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 150,
+                                        "dataIndex": "status",
+                                        "text": "Status"
+                                    },
+                                    "designerId": "97e083ef-fb3a-438b-a195-8f3f4ea697de"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "serviceID",
+                                        "text": "Service ID"
+                                    },
+                                    "designerId": "03618b71-ca5a-4147-b94d-71ac9cbac1ce"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "width": 150,
+                                        "dataIndex": "issueType",
+                                        "text": "Issuetype"
+                                    },
+                                    "designerId": "63974b53-0580-49ff-88f8-3e45f958f399"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "productType",
+                                        "text": "Producttype"
+                                    },
+                                    "designerId": "0283ee8b-5b1c-4a6c-9832-99a1bee12509"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "createdDate",
+                                        "text": "createdDate"
+                                    },
+                                    "designerId": "b82ffed5-7e2c-4604-a3e2-674e94b047a9"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "primaryContact",
+                                        "text": "primaryContact"
+                                    },
+                                    "designerId": "d2a592ed-0519-4fa6-a3e6-d914090af629"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
