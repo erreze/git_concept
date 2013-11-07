@@ -240,6 +240,10 @@ Ext.define('MyApp.view.vwpMain', {
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            xtype: 'container',
+                            id: 'cntTicketDetails'
                         }
                     ]
                 }

@@ -579,6 +579,18 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "cntTicketDetails"
+                    },
+                    "designerId": "39cd8977-2950-4cea-ac6c-222498fd2af5"
                 }
             ]
         }
