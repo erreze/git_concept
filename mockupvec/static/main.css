@@ -32,12 +32,40 @@ span, div {
     background:white;
     float:left;
     width:1130px;
-	padding:60px 20px 20px 20px;
+	padding:60px 20px 10px 20px;
 }
 .cnt-title #lblRepairs {
     font:20px tahoma,arial,verdana,sans-serif;
 }
-
+.cnt-access {
+	background:white;
+	display:block!important;
+    height:80px;
+    width:1250px;
+    margin: 0 auto 0;
+}
+.cnt-body {
+	background:red;
+	display:block!important;
+    width:1250px;
+    margin: 0 auto 0;
+    height:100%;
+}
+.cnt-menuLeft {
+	background:green;
+	display:block!important;
+    height:500px;
+    width:210px;
+    float:left;
+}
+.cont-Content {
+	background:blue;
+	display:block!important;
+    height:100%;
+    width:1040px;
+    float:left;
+    padding:10px;
+}
 
 
 /******/
