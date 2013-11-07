@@ -18,6 +18,7 @@ Ext.define('MyApp.view.vwpMain', {
 
     cls: 'home',
     id: 'vwpMain',
+    autoScroll: true,
 
     initComponent: function() {
         var me = this;
@@ -125,7 +126,46 @@ Ext.define('MyApp.view.vwpMain', {
                     items: [
                         {
                             xtype: 'container',
-                            cls: 'cnt-menuLeft'
+                            cls: 'cnt-menuLeft',
+                            items: [
+                                {
+                                    xtype: 'container',
+                                    cls: 'filters',
+                                    items: [
+                                        {
+                                            xtype: 'container',
+                                            cls: 'title',
+                                            items: [
+                                                {
+                                                    xtype: 'label',
+                                                    cls: '',
+                                                    text: 'Filters'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            xtype: 'container',
+                                            cls: 'menu',
+                                            html: '<label>Status</label>\n<ul>\n <li><input type="checkbox"/>Open (5)</li>\n <li><input type="checkbox"/>Closed (8)</li>\n</ul>'
+                                        },
+                                        {
+                                            xtype: 'container',
+                                            cls: 'menu',
+                                            html: '<label>Recent updates</label>\n<ul>\n <li><input type="checkbox"/>Last 24 hours</li>\n <li><input type="checkbox"/>Last 48 hours</li>\n <li><input type="checkbox"/>Last 72 hours</li>\n</ul>'
+                                        },
+                                        {
+                                            xtype: 'container',
+                                            cls: 'menu',
+                                            html: '<label>Title</label>\n<ul>\n <li><input type="checkbox"/>Primary Contact</li>\n <li><input type="checkbox"/>Issue type</li>\n <li><input type="checkbox"/>Issue product</li>\n</ul>'
+                                        },
+                                        {
+                                            xtype: 'container',
+                                            cls: 'menu',
+                                            html: '<label>Date</label>\n<ul>\n <li>Created</li>\n <li>Last Updated</li>\n</ul>'
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             xtype: 'container',
@@ -187,75 +227,6 @@ Ext.define('MyApp.view.vwpMain', {
                                             xtype: 'gridcolumn',
                                             dataIndex: 'primaryContact',
                                             text: 'primaryContact'
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    xtype: 'container',
-                    cls: 'mainContainer',
-                    layout: {
-                        type: 'absolute'
-                    },
-                    items: [
-                        {
-                            xtype: 'container',
-                            x: 170,
-                            y: 220,
-                            height: 480,
-                            layout: {
-                                type: 'card'
-                            },
-                            items: [
-                                {
-                                    xtype: 'panel',
-                                    header: false,
-                                    title: 'My Panel',
-                                    items: [
-                                        {
-                                            xtype: 'container',
-                                            cls: 'ticketDetail',
-                                            items: [
-                                                {
-                                                    xtype: 'label',
-                                                    text: 'Ticket'
-                                                },
-                                                {
-                                                    xtype: 'label'
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            xtype: 'dataview',
-                                            itemSelector: 'div'
-                                        },
-                                        {
-                                            xtype: 'panel',
-                                            cls: 'ticketDetailPanel',
-                                            layout: {
-                                                type: 'accordion'
-                                            },
-                                            header: false,
-                                            title: 'My Panel',
-                                            items: [
-                                                {
-                                                    xtype: 'panel',
-                                                    html: 'Ticket Log',
-                                                    collapsed: false,
-                                                    collapsible: false,
-                                                    title: 'Ticket Log',
-                                                    titleCollapse: true
-                                                },
-                                                {
-                                                    xtype: 'panel',
-                                                    html: 'Service Information',
-                                                    title: 'Service Information',
-                                                    titleCollapse: true
-                                                }
-                                            ]
                                         }
                                     ]
                                 }

@@ -6,7 +6,7 @@ span, div {
 }
 
 .home {
-    background:#F2F2F2;
+    
 	color:#808080!important;
 }
 .cont-header {
@@ -45,21 +45,21 @@ span, div {
     margin: 0 auto 0;
 }
 .cnt-body {
-	background:red;
+	background:white;
 	display:block!important;
     width:1250px;
     margin: 0 auto 0;
     height:100%;
 }
 .cnt-menuLeft {
-	background:green;
+	background:white;
 	display:block!important;
     height:500px;
     width:210px;
     float:left;
 }
 .cont-Content {
-	background:blue;
+	background:white;
 	display:block!important;
     height:100%;
     width:1040px;

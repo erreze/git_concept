@@ -57,6 +57,12 @@
                 "metadata/resource/css1"
             ],
             "className": "css1"
+        },
+        "d8db3774-7639-44c1-afb4-8f58ebb21d9d": {
+            "paths": [
+                "metadata/resource/css2"
+            ],
+            "className": "css2"
         }
     },
     "viewOrderMap": {
@@ -75,7 +81,8 @@
         "resource": [
             "1ff7b364-c76f-414e-94e5-a0443cec1274",
             "f4564b79-4720-420a-99a7-60109887e889",
-            "f6813824-0135-4d93-90d9-7b79ca30527b"
+            "f6813824-0135-4d93-90d9-7b79ca30527b",
+            "d8db3774-7639-44c1-afb4-8f58ebb21d9d"
         ],
         "app": [
             "application"
