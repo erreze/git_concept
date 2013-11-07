@@ -8,7 +8,7 @@
     "userConfig": {
         "cls": "home",
         "id": "vwpMain",
-        "designer|userClassName": "MyViewport",
+        "designer|userClassName": "vwpMain",
         "designer|initialView": true
     },
     "designerId": "90086192-6446-4d0e-b502-349a09141e0a",

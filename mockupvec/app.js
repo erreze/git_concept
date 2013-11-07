@@ -26,7 +26,7 @@ Ext.application({
         'MyJsonStore'
     ],
     views: [
-        'MyViewport'
+        'vwpMain'
     ],
     autoCreateViewport: true,
     controllers: [
