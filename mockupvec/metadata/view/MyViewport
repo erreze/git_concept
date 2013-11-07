@@ -82,20 +82,6 @@
                                 "text": "REPAIRS"
                             },
                             "designerId": "5984551c-504a-428e-887c-aa9951510c72"
-                        },
-                        {
-                            "type": "Ext.form.field.ComboBox",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "layout|x": 375,
-                                "layout|y": 56,
-                                "fieldLabel": "Label"
-                            },
-                            "designerId": "4574ffa0-e793-4cc9-8269-243994cb5684"
                         }
                     ]
                 }
@@ -121,23 +107,10 @@
             },
             "codeClass": null,
             "userConfig": {
+                "height": null,
                 "id": "cntBody"
             },
-            "designerId": "484e5c3f-5739-4119-848c-42949f6e24f1"
-        },
-        {
-            "type": "Ext.container.Container",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|snapToGrid": 10,
-                "cls": "mainContainer",
-                "layout": "absolute"
-            },
-            "designerId": "192ee74a-e732-4621-bc18-9b9bdf7543d6",
+            "designerId": "484e5c3f-5739-4119-848c-42949f6e24f1",
             "cn": [
                 {
                     "type": "Ext.container.Container",
@@ -147,8 +120,229 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|x": 170,
-                        "layout|y": 220,
+                        "designer|snapToGrid": 5,
+                        "cls": "nav",
+                        "height": 70,
+                        "html": [
+                            "<div>",
+                            "    <lu>",
+                            "        <li class=\"current\">TICKETS</li>",
+                            "        <li>TESTS</li>",
+                            "        <li>REPORTS</li>",
+                            "    </lu>",
+                            "</div>"
+                        ],
+                        "designer|displayName": "menu",
+                        "layout": "absolute"
+                    },
+                    "designerId": "617fb8bc-8d62-4533-8e91-fc4cbf713d17",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "finder",
+                                "componentCls": "container",
+                                "overCls": null,
+                                "designer|displayName": "finder"
+                            },
+                            "designerId": "9863e9fa-8425-4da1-8ffe-abbaddc757b6",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.ComboBox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "filterType",
+                                        "fieldLabel": "Find Tickets by",
+                                        "labelWidth": 90,
+                                        "blankText": "",
+                                        "emptyText": "Ticket Number",
+                                        "store": [
+                                            "[",
+                                            "    [1,\"Ticket Number\"],",
+                                            "    [1,\"Status\"],",
+                                            "    [1,\"Service ID\"],",
+                                            "    [1,\"Product Type\"],",
+                                            "    [1,\"Primary contact\"]",
+                                            "]"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "store": "array"
+                                    },
+                                    "designerId": "e37e93d1-2695-4c04-aefb-832def92e4bd"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "filterValue",
+                                        "fieldLabel": null
+                                    },
+                                    "designerId": "70912b73-e805-4675-8bfb-502ee2115049"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "filterbtn",
+                                        "text": "GO"
+                                    },
+                                    "designerId": "05a1e5c5-676e-4354-933d-c1d9404abdd1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "filters",
+                        "designer|displayName": "filters"
+                    },
+                    "designerId": "8aea6169-3c1d-4696-b46b-c30aaac3aa2c",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "title",
+                                "designer|displayName": "title"
+                            },
+                            "designerId": "af32addb-856d-4abb-86e8-1cc6aefa6ce5",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "",
+                                        "text": "Filters"
+                                    },
+                                    "designerId": "0a621f77-90e6-49c0-9d69-177bab45cfd6"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "menu",
+                                "html": [
+                                    "<label>Status</label>",
+                                    "<ul>",
+                                    " <li><input type=\"checkbox\"/>Open (5)</li>",
+                                    " <li><input type=\"checkbox\"/>Closed (8)</li>",
+                                    "</ul>"
+                                ],
+                                "designer|displayName": "status"
+                            },
+                            "designerId": "98e2fdd9-ecd5-4f3d-936d-feb7625fe6f1"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "menu",
+                                "html": [
+                                    "<label>Recent updates</label>",
+                                    "<ul>",
+                                    " <li><input type=\"checkbox\"/>Last 24 hours</li>",
+                                    " <li><input type=\"checkbox\"/>Last 48 hours</li>",
+                                    " <li><input type=\"checkbox\"/>Last 72 hours</li>",
+                                    "</ul>"
+                                ],
+                                "designer|displayName": "updates"
+                            },
+                            "designerId": "03b2247c-7b68-4ab3-aaa1-6583dbee1da9"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "menu",
+                                "html": [
+                                    "<label>Title</label>",
+                                    "<ul>",
+                                    " <li><input type=\"checkbox\"/>Primary Contact</li>",
+                                    " <li><input type=\"checkbox\"/>Issue type</li>",
+                                    " <li><input type=\"checkbox\"/>Issue product</li>",
+                                    "</ul>"
+                                ],
+                                "designer|displayName": "title"
+                            },
+                            "designerId": "ea6dfca6-db73-4389-974d-5cd51803cd9c"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "menu",
+                                "html": [
+                                    "<label>Date</label>",
+                                    "<ul>",
+                                    " <li>Created</li>",
+                                    " <li>Last Updated</li>",
+                                    "</ul>"
+                                ],
+                                "designer|displayName": "date"
+                            },
+                            "designerId": "75f1e774-d0c9-4cd6-9655-f4dc1e9a68bc"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
                         "height": 480,
                         "layout": "card"
                     },
@@ -485,108 +679,22 @@
                             ]
                         }
                     ]
-                },
-                {
-                    "type": "Ext.container.Container",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "layout|x": 20,
-                        "layout|y": 120,
-                        "designer|snapToGrid": 5,
-                        "cls": "nav",
-                        "height": 70,
-                        "html": [
-                            "<div>",
-                            "    <lu>",
-                            "        <li class=\"current\">TICKETS</li>",
-                            "        <li>TESTS</li>",
-                            "        <li>REPORTS</li>",
-                            "    </lu>",
-                            "</div>"
-                        ],
-                        "designer|displayName": "menu",
-                        "layout": "absolute"
-                    },
-                    "designerId": "617fb8bc-8d62-4533-8e91-fc4cbf713d17",
-                    "cn": [
-                        {
-                            "type": "Ext.container.Container",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "cls": "finder",
-                                "componentCls": "container",
-                                "overCls": null,
-                                "designer|displayName": "finder"
-                            },
-                            "designerId": "9863e9fa-8425-4da1-8ffe-abbaddc757b6",
-                            "cn": [
-                                {
-                                    "type": "Ext.form.field.ComboBox",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "cls": "filterType",
-                                        "fieldLabel": "Find Tickets by",
-                                        "labelWidth": 90,
-                                        "blankText": "",
-                                        "emptyText": "Ticket Number",
-                                        "store": [
-                                            "[",
-                                            "    [1,\"Ticket Number\"],",
-                                            "    [1,\"Status\"],",
-                                            "    [1,\"Service ID\"],",
-                                            "    [1,\"Product Type\"],",
-                                            "    [1,\"Primary contact\"]",
-                                            "]"
-                                        ]
-                                    },
-                                    "configAlternates": {
-                                        "store": "array"
-                                    },
-                                    "designerId": "e37e93d1-2695-4c04-aefb-832def92e4bd"
-                                },
-                                {
-                                    "type": "Ext.form.field.Text",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "cls": "filterValue",
-                                        "fieldLabel": null
-                                    },
-                                    "designerId": "70912b73-e805-4675-8bfb-502ee2115049"
-                                },
-                                {
-                                    "type": "Ext.button.Button",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "cls": "filterbtn",
-                                        "text": "GO"
-                                    },
-                                    "designerId": "05a1e5c5-676e-4354-933d-c1d9404abdd1"
-                                }
-                            ]
-                        }
-                    ]
                 }
             ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "cls": "mainContainer",
+                "layout": "absolute"
+            },
+            "designerId": "192ee74a-e732-4621-bc18-9b9bdf7543d6"
         }
     ]
 }

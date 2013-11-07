@@ -50,12 +50,6 @@ Ext.define('MyApp.view.MyViewport', {
                                     xtype: 'label',
                                     id: 'lblRepairs',
                                     text: 'REPAIRS'
-                                },
-                                {
-                                    xtype: 'combobox',
-                                    x: 375,
-                                    y: 56,
-                                    fieldLabel: 'Label'
                                 }
                             ]
                         }
@@ -67,19 +61,104 @@ Ext.define('MyApp.view.MyViewport', {
                 },
                 {
                     xtype: 'container',
-                    id: 'cntBody'
-                },
-                {
-                    xtype: 'container',
-                    cls: 'mainContainer',
-                    layout: {
-                        type: 'absolute'
-                    },
+                    id: 'cntBody',
                     items: [
                         {
                             xtype: 'container',
-                            x: 170,
-                            y: 220,
+                            cls: 'nav',
+                            height: 70,
+                            html: '<div>\n    <lu>\n        <li class="current">TICKETS</li>\n        <li>TESTS</li>\n        <li>REPORTS</li>\n    </lu>\n</div>',
+                            layout: {
+                                type: 'absolute'
+                            },
+                            items: [
+                                {
+                                    xtype: 'container',
+                                    cls: 'finder',
+                                    componentCls: 'container',
+                                    items: [
+                                        {
+                                            xtype: 'combobox',
+                                            cls: 'filterType',
+                                            fieldLabel: 'Find Tickets by',
+                                            labelWidth: 90,
+                                            blankText: '',
+                                            emptyText: 'Ticket Number',
+                                            store: [
+                                                [
+                                                    1,
+                                                    'Ticket Number'
+                                                ],
+                                                [
+                                                    1,
+                                                    'Status'
+                                                ],
+                                                [
+                                                    1,
+                                                    'Service ID'
+                                                ],
+                                                [
+                                                    1,
+                                                    'Product Type'
+                                                ],
+                                                [
+                                                    1,
+                                                    'Primary contact'
+                                                ]
+                                            ]
+                                        },
+                                        {
+                                            xtype: 'textfield',
+                                            cls: 'filterValue'
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            cls: 'filterbtn',
+                                            text: 'GO'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            xtype: 'container',
+                            cls: 'filters',
+                            items: [
+                                {
+                                    xtype: 'container',
+                                    cls: 'title',
+                                    items: [
+                                        {
+                                            xtype: 'label',
+                                            cls: '',
+                                            text: 'Filters'
+                                        }
+                                    ]
+                                },
+                                {
+                                    xtype: 'container',
+                                    cls: 'menu',
+                                    html: '<label>Status</label>\n<ul>\n <li><input type="checkbox"/>Open (5)</li>\n <li><input type="checkbox"/>Closed (8)</li>\n</ul>'
+                                },
+                                {
+                                    xtype: 'container',
+                                    cls: 'menu',
+                                    html: '<label>Recent updates</label>\n<ul>\n <li><input type="checkbox"/>Last 24 hours</li>\n <li><input type="checkbox"/>Last 48 hours</li>\n <li><input type="checkbox"/>Last 72 hours</li>\n</ul>'
+                                },
+                                {
+                                    xtype: 'container',
+                                    cls: 'menu',
+                                    html: '<label>Title</label>\n<ul>\n <li><input type="checkbox"/>Primary Contact</li>\n <li><input type="checkbox"/>Issue type</li>\n <li><input type="checkbox"/>Issue product</li>\n</ul>'
+                                },
+                                {
+                                    xtype: 'container',
+                                    cls: 'menu',
+                                    html: '<label>Date</label>\n<ul>\n <li>Created</li>\n <li>Last Updated</li>\n</ul>'
+                                }
+                            ]
+                        },
+                        {
+                            xtype: 'container',
                             height: 480,
                             layout: {
                                 type: 'card'
@@ -194,67 +273,15 @@ Ext.define('MyApp.view.MyViewport', {
                                     ]
                                 }
                             ]
-                        },
-                        {
-                            xtype: 'container',
-                            x: 20,
-                            y: 120,
-                            cls: 'nav',
-                            height: 70,
-                            html: '<div>\n    <lu>\n        <li class="current">TICKETS</li>\n        <li>TESTS</li>\n        <li>REPORTS</li>\n    </lu>\n</div>',
-                            layout: {
-                                type: 'absolute'
-                            },
-                            items: [
-                                {
-                                    xtype: 'container',
-                                    cls: 'finder',
-                                    componentCls: 'container',
-                                    items: [
-                                        {
-                                            xtype: 'combobox',
-                                            cls: 'filterType',
-                                            fieldLabel: 'Find Tickets by',
-                                            labelWidth: 90,
-                                            blankText: '',
-                                            emptyText: 'Ticket Number',
-                                            store: [
-                                                [
-                                                    1,
-                                                    'Ticket Number'
-                                                ],
-                                                [
-                                                    1,
-                                                    'Status'
-                                                ],
-                                                [
-                                                    1,
-                                                    'Service ID'
-                                                ],
-                                                [
-                                                    1,
-                                                    'Product Type'
-                                                ],
-                                                [
-                                                    1,
-                                                    'Primary contact'
-                                                ]
-                                            ]
-                                        },
-                                        {
-                                            xtype: 'textfield',
-                                            cls: 'filterValue'
-                                        },
-                                        {
-                                            xtype: 'button',
-                                            cls: 'filterbtn',
-                                            text: 'GO'
-                                        }
-                                    ]
-                                }
-                            ]
                         }
                     ]
+                },
+                {
+                    xtype: 'container',
+                    cls: 'mainContainer',
+                    layout: {
+                        type: 'absolute'
+                    }
                 }
             ]
         });

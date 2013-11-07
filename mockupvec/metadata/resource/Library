@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "Library",
-        "basePath": "../../../extjs/",
+        "basePath": "../../../ext/",
         "theme": null
     },
     "designerId": "1ff7b364-c76f-414e-94e5-a0443cec1274"
