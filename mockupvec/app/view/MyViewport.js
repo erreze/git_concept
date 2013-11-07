@@ -50,6 +50,12 @@ Ext.define('MyApp.view.MyViewport', {
                                     xtype: 'label',
                                     id: 'lblRepairs',
                                     text: 'REPAIRS'
+                                },
+                                {
+                                    xtype: 'combobox',
+                                    x: 375,
+                                    y: 56,
+                                    fieldLabel: 'Label'
                                 }
                             ]
                         }
@@ -184,6 +190,65 @@ Ext.define('MyApp.view.MyViewport', {
                                                     titleCollapse: true
                                                 }
                                             ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            xtype: 'container',
+                            x: 20,
+                            y: 120,
+                            cls: 'nav',
+                            height: 70,
+                            html: '<div>\n    <lu>\n        <li class="current">TICKETS</li>\n        <li>TESTS</li>\n        <li>REPORTS</li>\n    </lu>\n</div>',
+                            layout: {
+                                type: 'absolute'
+                            },
+                            items: [
+                                {
+                                    xtype: 'container',
+                                    cls: 'finder',
+                                    componentCls: 'container',
+                                    items: [
+                                        {
+                                            xtype: 'combobox',
+                                            cls: 'filterType',
+                                            fieldLabel: 'Find Tickets by',
+                                            labelWidth: 90,
+                                            blankText: '',
+                                            emptyText: 'Ticket Number',
+                                            store: [
+                                                [
+                                                    1,
+                                                    'Ticket Number'
+                                                ],
+                                                [
+                                                    1,
+                                                    'Status'
+                                                ],
+                                                [
+                                                    1,
+                                                    'Service ID'
+                                                ],
+                                                [
+                                                    1,
+                                                    'Product Type'
+                                                ],
+                                                [
+                                                    1,
+                                                    'Primary contact'
+                                                ]
+                                            ]
+                                        },
+                                        {
+                                            xtype: 'textfield',
+                                            cls: 'filterValue'
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            cls: 'filterbtn',
+                                            text: 'GO'
                                         }
                                     ]
                                 }

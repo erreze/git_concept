@@ -1,0 +1,59 @@
+.nav {
+	background-image: url(../../mockupvec/static/images/arrow.png);
+	z-index: 100000;
+	background-position: 70px 42px;
+	background-repeat: no-repeat;
+}
+.nav lu{
+    list-style: none;
+    float: left;
+    padding: 10px 30px;
+    font-size: 1.1em;
+    border:solid; border-width:3px;
+    border-color: rgb(182, 181, 181);
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    width:100%;
+    height:42px;
+}
+.nav .finder{
+	float:right;
+    display:block;
+    padding-top:43px;
+    /*background-color:gray;*/
+    width:300px;
+}
+.nav .finder>span>div{
+	float:right;
+    display:inline-block;
+    background-color:rgb(230, 230, 230);
+    width:480px;
+    padding-left:30px;
+}
+.nav .finder>span>div .filterType,.filterValue,.filterbtn{
+    float:left;
+	display:block;
+}
+
+.nav .finder>span>div .filterType{
+
+}
+.nav .finder>span>div .filterValue{
+	margin-left:5px;
+}
+.nav .finder>span>div .filterbtn{
+    padding-left:5px;
+}
+
+.nav lu li.current{
+    color:red;
+}
+.nav lu li{
+    float: left; 
+    padding: 10px 30px;
+}
+.nav lu li:hover{
+    color:red;
+    cursor:pointer;
+}
