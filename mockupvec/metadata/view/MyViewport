@@ -7,7 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "MyViewport",
-        "designer|initialView": true
+        "designer|initialView": true,
+        "autoScroll": true
     },
     "designerId": "90086192-6446-4d0e-b502-349a09141e0a",
     "cn": [
@@ -21,6 +22,7 @@
             "userConfig": {
                 "designer|snapToGrid": 10,
                 "cls": "mainContainer",
+                "height": 800,
                 "layout": "absolute"
             },
             "designerId": "192ee74a-e732-4621-bc18-9b9bdf7543d6",
@@ -87,6 +89,7 @@
                     "userConfig": {
                         "layout|x": 170,
                         "layout|y": 220,
+                        "activeItem": 1,
                         "height": 480,
                         "layout": "card"
                     },
@@ -295,50 +298,13 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "cls": "ticketDetailPanel",
+                                "autoScroll": true,
                                 "header": false,
-                                "title": "My Panel"
+                                "title": "ticketDetail"
                             },
                             "designerId": "c80c11cd-0381-44b2-806d-510d82c40ae5",
                             "cn": [
-                                {
-                                    "type": "Ext.container.Container",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "cls": "ticketDetail",
-                                        "style": null
-                                    },
-                                    "designerId": "63d8083d-d459-43c3-9398-9e07d88329c3",
-                                    "cn": [
-                                        {
-                                            "type": "Ext.form.Label",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "text": "Ticket"
-                                            },
-                                            "designerId": "70e24f71-2037-4e72-88c3-e569e802e288"
-                                        },
-                                        {
-                                            "type": "Ext.form.Label",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "text": null
-                                            },
-                                            "designerId": "26656e4a-a44b-4044-b8cf-e29d4666f302"
-                                        }
-                                    ]
-                                },
                                 {
                                     "type": "Ext.view.View",
                                     "reference": {
@@ -347,7 +313,8 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "itemSelector": "div"
+                                        "itemSelector": null,
+                                        "store": "ticketDetail"
                                     },
                                     "designerId": "29489e2f-06bb-495f-bb79-9711de8bfa47",
                                     "cn": [
@@ -360,7 +327,56 @@
                                             "codeClass": null,
                                             "userConfig": {
                                                 "implHandler": [
-                                                    ""
+                                                    "<tpl for=\".\">",
+                                                    "    <tpl for=\"TicketDetail\">",
+                                                    "        <div class=\"ticketNumber\">Ticket {ticketNumber}</div>",
+                                                    "        <div class=\"htd\">",
+                                                    "    ",
+                                                    "                <div class=\"htdSS\">",
+                                                    "                    <div class=\"htdil\">Service ID</div>",
+                                                    "                    <div class=\"htdi\">{serviceID}</div>",
+                                                    "                </div>",
+                                                    "                <div class=\"htdPC\">",
+                                                    "                    <div class=\"htdil\">Primary Contact</div>",
+                                                    "                    <div class=\"htdi\">{primaryContact}</div>",
+                                                    "                    <div class=\"htdi\">|</div>",
+                                                    "                    <div class=\"htdi\">{primaryContactPhone}</div>",
+                                                    "                </div>",
+                                                    "                <div class=\"htdSS\">",
+                                                    "                    <div class=\"htdil\">Status</div>",
+                                                    "                    <div class=\"htdis\">{status}</div>",
+                                                    "                </div>",
+                                                    "        </div>",
+                                                    "\t</tpl>",
+                                                    "    <div class=\"contenttable\">",
+                                                    "\t\t<div class=\"detailtTittle\">Activity Log</div>",
+                                                    "        <table cellspacing=\"0\" >",
+                                                    "            <tr>",
+                                                    "                <th class=\"thal-l\">Log Date</th><th class=\"thal-m\">Function Code</th><th class=\"thal-r\">Description</th>",
+                                                    "            </tr>",
+                                                    "            <tpl for=\"ActivityLog\">",
+                                                    "                <tr class=\"{[xindex % 2 === 0 ? \"even-row\":\"odd-row\"]}\">",
+                                                    "                    <td class=\"tdal-l\">{logDate}</td><td class=\"tdal-m\">{functionCode}</td><td class=\"tdal-r last\">{description}</td>",
+                                                    "                </tr>",
+                                                    "            </tpl>",
+                                                    "        </table>",
+                                                    "    </div>",
+                                                    "    ",
+                                                    "    <div class=\"contenttable\">",
+                                                    "\t\t<div class=\"detailtTittle\">Ticket Log</div>",
+                                                    "        <table cellspacing=\"0\">",
+                                                    "            <tr>",
+                                                    "                <th>Last Update Date/Time</th><th>Estimated Repair Time (HH:MM)</th><th>Elapsed Repair Time</th>",
+                                                    "            </tr>",
+                                                    "            <tpl for=\"TicketLog\">",
+                                                    "                <tr>",
+                                                    "                    <td>{lastUpdated}</td><td>{estimatedRepairTime}</td><td>{elapsedRepairTime}</td>",
+                                                    "                </tr>",
+                                                    "            </tpl>",
+                                                    "        </table>",
+                                                    "    </div>",
+                                                    "    ",
+                                                    "</tpl>"
                                                 ],
                                                 "designer|displayName": "tpl"
                                             },
@@ -377,48 +393,48 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "cls": "ticketDetailPanel",
-                                        "layout": "accordion",
-                                        "header": false,
-                                        "title": "My Panel"
+                                        "html": [
+                                            "Ticket Log"
+                                        ],
+                                        "bodyCls": [
+                                            "acccls",
+                                            "x-panel-body-default",
+                                            "x-collapsed",
+                                            "x-panel-body-collapsed",
+                                            "x-panel-body-default-collapsed"
+                                        ],
+                                        "collapsed": true,
+                                        "collapsible": true,
+                                        "title": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ticket Log",
+                                        "titleCollapse": true
                                     },
-                                    "designerId": "74df1dcc-3ada-46b6-b807-929bb59ecf42",
-                                    "cn": [
-                                        {
-                                            "type": "Ext.panel.Panel",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "html": [
-                                                    "Ticket Log",
-                                                    ""
-                                                ],
-                                                "collapsed": false,
-                                                "collapsible": false,
-                                                "title": "Ticket Log",
-                                                "titleCollapse": true
-                                            },
-                                            "designerId": "fa19ce1e-0f94-411a-bf37-919c3b73ff64"
-                                        },
-                                        {
-                                            "type": "Ext.panel.Panel",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "html": [
-                                                    "Service Information"
-                                                ],
-                                                "title": "Service Information",
-                                                "titleCollapse": true
-                                            },
-                                            "designerId": "678d8996-705a-4f53-8963-5ef55d717332"
-                                        }
-                                    ]
+                                    "designerId": "ffe9645b-64e0-4245-85d1-9a3aaf3b0daa"
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "ticketDetailPanel",
+                                        "html": [
+                                            "Service Information"
+                                        ],
+                                        "bodyCls": [
+                                            "acccls",
+                                            "x-panel-body-default",
+                                            "x-collapsed",
+                                            "x-panel-body-collapsed",
+                                            "x-panel-body-default-collapsed"
+                                        ],
+                                        "collapsed": true,
+                                        "collapsible": true,
+                                        "title": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Service Information",
+                                        "titleCollapse": true
+                                    },
+                                    "designerId": "2d91bae7-f774-4327-9e44-fa250f3c1bdf"
                                 }
                             ]
                         }

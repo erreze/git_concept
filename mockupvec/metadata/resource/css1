@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css1",
+        "url": "static/ticketDetails.css"
+    },
+    "designerId": "41987eac-efab-4e29-b8b6-5b4fcf427837"
+}

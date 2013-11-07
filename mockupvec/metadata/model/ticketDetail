@@ -1,0 +1,74 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ticketDetail"
+    },
+    "designerId": "f4e12d55-5058-4a78-9227-ad4b0969f78a",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "TicketDetail"
+            },
+            "designerId": "052221b9-50e5-4083-ba88-263e02d7778a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ActivityLog"
+            },
+            "designerId": "4645c410-24f1-4c6f-8d10-05fd2800d4d1"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "TicketLog"
+            },
+            "designerId": "c72b8f53-97c6-406b-950f-a30584f57549"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "TicketInformation"
+            },
+            "designerId": "2ef39662-d80a-4d09-9b37-37febec21ffe"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ServiceInformation"
+            },
+            "designerId": "46941a9e-4de6-4849-8df1-15a29c99fdac"
+        }
+    ]
+}

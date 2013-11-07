@@ -7,10 +7,12 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "MyModel"
+            "MyModel",
+            "ticketDetail"
         ],
         "stores": [
-            "MyJsonStore"
+            "MyJsonStore",
+            "ticketDetail"
         ],
         "views": [
             "MyViewport"

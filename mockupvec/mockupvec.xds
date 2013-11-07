@@ -51,6 +51,28 @@
                 "app/controller/MainController.js"
             ],
             "className": "MainController"
+        },
+        "76ad2509-666a-422d-8f33-6324a08e35de": {
+            "paths": [
+                "metadata/store/ticketDetail",
+                "app/store/override/ticketDetail.js",
+                "app/store/ticketDetail.js"
+            ],
+            "className": "ticketDetail"
+        },
+        "f4e12d55-5058-4a78-9227-ad4b0969f78a": {
+            "paths": [
+                "metadata/model/ticketDetail",
+                "app/model/override/ticketDetail.js",
+                "app/model/ticketDetail.js"
+            ],
+            "className": "ticketDetail"
+        },
+        "41987eac-efab-4e29-b8b6-5b4fcf427837": {
+            "paths": [
+                "metadata/resource/css1"
+            ],
+            "className": "css1"
         }
     },
     "viewOrderMap": {
@@ -58,17 +80,20 @@
             "90086192-6446-4d0e-b502-349a09141e0a"
         ],
         "store": [
-            "0eddcded-28ed-48d8-9a5a-9cb2332c6dae"
+            "0eddcded-28ed-48d8-9a5a-9cb2332c6dae",
+            "76ad2509-666a-422d-8f33-6324a08e35de"
         ],
         "controller": [
             "c34d36ff-dfa8-40de-97ad-c2b08790e943"
         ],
         "model": [
-            "617f4024-0e36-4d7d-a02e-a8421cda1c5c"
+            "617f4024-0e36-4d7d-a02e-a8421cda1c5c",
+            "f4e12d55-5058-4a78-9227-ad4b0969f78a"
         ],
         "resource": [
             "1ff7b364-c76f-414e-94e5-a0443cec1274",
-            "f4564b79-4720-420a-99a7-60109887e889"
+            "f4564b79-4720-420a-99a7-60109887e889",
+            "41987eac-efab-4e29-b8b6-5b4fcf427837"
         ],
         "app": [
             "application"

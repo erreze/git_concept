@@ -1,30 +1,30 @@
 {
-    "ticketDetail" : [{
+    "TicketDetail" : [{
         "ticketNumber" : "2013110400023",
         "serviceID" : "8002174253",
         "primaryContact" : "Jairo Sencion",
         "primaryContactPhone" : "555151121212",
-        "status": "CLOSED",
+        "status": "Closed",
     }],
 
     "ActivityLog" : [{ 
-        "logDate" : "09/10/2013",
+        "logDate" : "09/10/2013 12:42 PM GMT",
         "functionCode" : "RMK",
         "description": "Lore ipsum dolor sit amit Lorem ipsum dolor sit amit lorem ipsum dolor sir amit Lore ipsum dolor sit amit Lorem ipsum dolor sit amit lorem ipsum dolor sit amit"
     },
     { 
-        "logDate" : "19/09/2013",
+        "logDate" : "19/09/2013 10:12 AM GMT",
         "functionCode" : "CUS",
         "description": "Lore ipsum dolor sit amit Lorem ipsum dolor sit amit lorem ipsum dolor sir amit Lore ipsum dolor sit amit Lorem ipsum dolor sit amit lorem ipsum dolor sit amit"
     },
     { 
-        "logDate" : "09/10/2013",
+        "logDate" : "09/10/2013 12:42 PM GMT",
         "functionCode" : "RMK",
         "description": "Lore ipsum dolor sit amit Lorem ipsum dolor sit amit lorem ipsum dolor sir amit Lore ipsum dolor sit amit Lorem ipsum dolor sit amit lorem ipsum dolor sit amit"
     }],
 
     "TicketLog" : [{ 
-        "lastUpdated": "09/10/2013",
+        "lastUpdated": "09/10/2013 12:42 PM GMT",
         "estimatedRepairTime" : "120:00",
         "elapsedRepairTime" : "712:08"
     }],

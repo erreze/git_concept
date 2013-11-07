@@ -7,11 +7,11 @@
     "codeClass": null,
     "userConfig": {
         "autoLoad": true,
-        "model": "MyModel",
-        "storeId": "MyJsonStore",
-        "designer|userClassName": "MyJsonStore"
+        "model": "ticketDetail",
+        "storeId": "MyJsonStore1",
+        "designer|userClassName": "ticketDetail"
     },
-    "designerId": "0eddcded-28ed-48d8-9a5a-9cb2332c6dae",
+    "designerId": "76ad2509-666a-422d-8f33-6324a08e35de",
     "cn": [
         {
             "type": "Ext.data.proxy.Ajax",
@@ -21,9 +21,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "data/tickets.json"
+                "url": "http://localhost/git_concept/mockupvec/data/ticketDetail.json"
             },
-            "designerId": "886b2f95-d656-47bc-96bf-ea71f6262a16",
+            "designerId": "921bfd4b-c1f2-4e81-bc66-a60b69a64ba5",
             "cn": [
                 {
                     "type": "Ext.data.reader.Json",
@@ -32,10 +32,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "userConfig": {
-                        "root": "tickets"
-                    },
-                    "designerId": "afd59500-36d8-4157-af4a-bb2e48f3d6b2"
+                    "designerId": "e0353e46-dbd9-49c0-9ac4-3f7952e3b597"
                 }
             ]
         }

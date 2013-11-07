@@ -1,0 +1,129 @@
+.ticketDetail{
+    padding:10px;
+    font-weight:bold;
+}
+
+.ticketDetailPanel{
+    padding:0px;
+}
+
+.htd{
+    width:95%;
+    height:40px;
+	background-color:#C8CCC8;  
+    padding:0px 40px 0px 40px;
+}
+.htdSS{
+    float:left;
+    width:30%;
+    height:40px;
+    padding:10px;
+    font-weight:bold;
+}
+
+.htdPC{
+    float:left;
+    width:40%;
+    height:40px;
+    padding:10px;
+    font-weight:bold;
+}
+
+.htdil{
+	float:left;
+    margin-right:45px;
+}
+
+.htdi{
+	float:left;
+    color:#808080;
+	padding:3px;  
+}
+
+.htdis{
+	float:left;
+    color:#808080;
+    padding:5px;
+    background-color:#EDF0ED;
+}
+
+.activitylog{
+    padding:10px 45px;
+    width:100%;
+    height:300px;
+}
+
+.detailtTittle{
+    width:110%;padding-bottom:5px;
+    border-bottom: 1px solid #EDF0ED;  
+    font-size:12px;
+    font-weight:bold;
+}
+
+table, tr, th, td {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+.contenttable{width:95%; padding:10px 45px;}
+table{
+    overflow:hidden;
+    width:95%;
+    font-size:10.5px;
+}
+
+th, td {
+    padding:11px 5px 11px; text-align:left; 
+}
+
+th.thal-l, td.tdal-l {
+	width:15%; 
+}
+th.thal-m, td.tdal-m {
+	width:15%;
+}
+th.thal-r, td.tdal-r {
+	width:60%;
+}
+
+td.tdal-r{
+	padding-left:11px;
+}
+
+th {
+    padding-bottom:5px; text-shadow: 1px 1px 1px #fff; 
+    border-bottom: 1px solid #555;color:#808080;
+}
+
+tr.even-row td {
+    background:#EDEDED;
+}
+
+td.last{
+    padding-right:240px;
+}
+
+td.first, th.first {
+    text-align:left
+}
+
+.ticketNumber{
+    height:30px;
+    font-weight:bold;
+    font-size:14px;
+    padding-bottom:15px;    
+    width:95%;
+}
+
+.ticketDetailPanel{
+	width:95%;   
+}
+
+.acccls{
+    padding:35px;
+}

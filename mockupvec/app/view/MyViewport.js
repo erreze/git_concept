@@ -16,6 +16,8 @@
 Ext.define('MyApp.view.MyViewport', {
     extend: 'Ext.container.Viewport',
 
+    autoScroll: true,
+
     initComponent: function() {
         var me = this;
 
@@ -24,6 +26,7 @@ Ext.define('MyApp.view.MyViewport', {
                 {
                     xtype: 'container',
                     cls: 'mainContainer',
+                    height: 800,
                     layout: {
                         type: 'absolute'
                     },
@@ -59,6 +62,7 @@ Ext.define('MyApp.view.MyViewport', {
                             xtype: 'container',
                             x: 170,
                             y: 220,
+                            activeItem: 1,
                             height: 480,
                             layout: {
                                 type: 'card'
@@ -125,50 +129,86 @@ Ext.define('MyApp.view.MyViewport', {
                                 },
                                 {
                                     xtype: 'panel',
+                                    cls: 'ticketDetailPanel',
+                                    autoScroll: true,
                                     header: false,
-                                    title: 'My Panel',
+                                    title: 'ticketDetail',
                                     items: [
                                         {
-                                            xtype: 'container',
-                                            cls: 'ticketDetail',
-                                            items: [
-                                                {
-                                                    xtype: 'label',
-                                                    text: 'Ticket'
-                                                },
-                                                {
-                                                    xtype: 'label'
-                                                }
-                                            ]
-                                        },
-                                        {
                                             xtype: 'dataview',
-                                            itemSelector: 'div'
+                                            tpl: [
+                                                '<tpl for=".">',
+                                                '    <tpl for="TicketDetail">',
+                                                '        <div class="ticketNumber">Ticket {ticketNumber}</div>',
+                                                '        <div class="htd">',
+                                                '    ',
+                                                '                <div class="htdSS">',
+                                                '                    <div class="htdil">Service ID</div>',
+                                                '                    <div class="htdi">{serviceID}</div>',
+                                                '                </div>',
+                                                '                <div class="htdPC">',
+                                                '                    <div class="htdil">Primary Contact</div>',
+                                                '                    <div class="htdi">{primaryContact}</div>',
+                                                '                    <div class="htdi">|</div>',
+                                                '                    <div class="htdi">{primaryContactPhone}</div>',
+                                                '                </div>',
+                                                '                <div class="htdSS">',
+                                                '                    <div class="htdil">Status</div>',
+                                                '                    <div class="htdis">{status}</div>',
+                                                '                </div>',
+                                                '        </div>',
+                                                '	</tpl>',
+                                                '    <div class="contenttable">',
+                                                '		<div class="detailtTittle">Activity Log</div>',
+                                                '        <table cellspacing="0" >',
+                                                '            <tr>',
+                                                '                <th class="thal-l">Log Date</th><th class="thal-m">Function Code</th><th class="thal-r">Description</th>',
+                                                '            </tr>',
+                                                '            <tpl for="ActivityLog">',
+                                                '                <tr class="{[xindex % 2 === 0 ? "even-row":"odd-row"]}">',
+                                                '                    <td class="tdal-l">{logDate}</td><td class="tdal-m">{functionCode}</td><td class="tdal-r last">{description}</td>',
+                                                '                </tr>',
+                                                '            </tpl>',
+                                                '        </table>',
+                                                '    </div>',
+                                                '    ',
+                                                '    <div class="contenttable">',
+                                                '		<div class="detailtTittle">Ticket Log</div>',
+                                                '        <table cellspacing="0">',
+                                                '            <tr>',
+                                                '                <th>Last Update Date/Time</th><th>Estimated Repair Time (HH:MM)</th><th>Elapsed Repair Time</th>',
+                                                '            </tr>',
+                                                '            <tpl for="TicketLog">',
+                                                '                <tr>',
+                                                '                    <td>{lastUpdated}</td><td>{estimatedRepairTime}</td><td>{elapsedRepairTime}</td>',
+                                                '                </tr>',
+                                                '            </tpl>',
+                                                '        </table>',
+                                                '    </div>',
+                                                '    ',
+                                                '</tpl>'
+                                            ],
+                                            store: 'ticketDetail'
                                         },
                                         {
                                             xtype: 'panel',
                                             cls: 'ticketDetailPanel',
-                                            layout: {
-                                                type: 'accordion'
-                                            },
-                                            header: false,
-                                            title: 'My Panel',
-                                            items: [
-                                                {
-                                                    xtype: 'panel',
-                                                    html: 'Ticket Log',
-                                                    collapsed: false,
-                                                    collapsible: false,
-                                                    title: 'Ticket Log',
-                                                    titleCollapse: true
-                                                },
-                                                {
-                                                    xtype: 'panel',
-                                                    html: 'Service Information',
-                                                    title: 'Service Information',
-                                                    titleCollapse: true
-                                                }
-                                            ]
+                                            html: 'Ticket Log',
+                                            bodyCls: 'acccls',
+                                            collapsed: true,
+                                            collapsible: true,
+                                            title: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ticket Log',
+                                            titleCollapse: true
+                                        },
+                                        {
+                                            xtype: 'panel',
+                                            cls: 'ticketDetailPanel',
+                                            html: 'Service Information',
+                                            bodyCls: 'acccls',
+                                            collapsed: true,
+                                            collapsible: true,
+                                            title: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Service Information',
+                                            titleCollapse: true
                                         }
                                     ]
                                 }
