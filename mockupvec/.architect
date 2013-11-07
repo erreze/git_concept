@@ -233,11 +233,19 @@
         "topInstance": null
     },
     "inspectorState": {
+<<<<<<< HEAD
+        "topInstance": "application",
+        "selectedInstance": "application"
+    },
+    "codeState": {
+        "topInstance": "application"
+=======
         "topInstance": "f4564b79-4720-420a-99a7-60109887e889",
         "selectedInstance": "f4564b79-4720-420a-99a7-60109887e889"
     },
     "codeState": {
         "topInstance": "f4564b79-4720-420a-99a7-60109887e889"
+>>>>>>> wilder
     },
     "editMode": "code"
 }
