@@ -16,3 +16,12 @@
 	font-size: 18px;
     color: gray;
 }
+
+.ticketDetail{
+    padding:10px;
+    font-weight:bold;
+}
+
+.ticketDetailPanel{
+    padding:0px;
+}
