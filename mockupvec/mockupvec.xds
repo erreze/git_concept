@@ -2,7 +2,7 @@
     "name": "mockupvec",
     "settings": {},
     "xdsVersion": "2.2.3",
-    "xdsBuild": 1039,
+    "xdsBuild": 1044,
     "schemaVersion": 1,
     "upgradeVersion": 210000000503,
     "framework": "ext42",
@@ -51,6 +51,12 @@
                 "app/controller/MainController.js"
             ],
             "className": "MainController"
+        },
+        "f6813824-0135-4d93-90d9-7b79ca30527b": {
+            "paths": [
+                "metadata/resource/css1"
+            ],
+            "className": "css1"
         }
     },
     "viewOrderMap": {
@@ -68,7 +74,8 @@
         ],
         "resource": [
             "1ff7b364-c76f-414e-94e5-a0443cec1274",
-            "f4564b79-4720-420a-99a7-60109887e889"
+            "f4564b79-4720-420a-99a7-60109887e889",
+            "f6813824-0135-4d93-90d9-7b79ca30527b"
         ],
         "app": [
             "application"
