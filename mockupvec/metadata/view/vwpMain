@@ -8,7 +8,7 @@
     "userConfig": {
         "cls": "home",
         "id": "vwpMain",
-        "designer|userClassName": "MyViewport",
+        "designer|userClassName": "vwpMain",
         "designer|initialView": true
     },
     "designerId": "90086192-6446-4d0e-b502-349a09141e0a",
@@ -82,20 +82,6 @@
                                 "text": "REPAIRS"
                             },
                             "designerId": "5984551c-504a-428e-887c-aa9951510c72"
-                        },
-                        {
-                            "type": "Ext.form.field.ComboBox",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "layout|x": 375,
-                                "layout|y": 56,
-                                "fieldLabel": "Label"
-                            },
-                            "designerId": "4574ffa0-e793-4cc9-8269-243994cb5684"
                         }
                     ]
                 }
@@ -109,35 +95,10 @@
             },
             "codeClass": null,
             "userConfig": {
+                "cls": "cnt-access",
                 "id": "cntAccess"
             },
-            "designerId": "ef8777bd-71fc-4743-856d-d51297749269"
-        },
-        {
-            "type": "Ext.container.Container",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "id": "cntBody"
-            },
-            "designerId": "484e5c3f-5739-4119-848c-42949f6e24f1"
-        },
-        {
-            "type": "Ext.container.Container",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|snapToGrid": 10,
-                "cls": "mainContainer",
-                "layout": "absolute"
-            },
-            "designerId": "192ee74a-e732-4621-bc18-9b9bdf7543d6",
+            "designerId": "ef8777bd-71fc-4743-856d-d51297749269",
             "cn": [
                 {
                     "type": "Ext.container.Container",
@@ -147,12 +108,137 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|x": 170,
-                        "layout|y": 220,
-                        "height": 480,
-                        "layout": "card"
+                        "designer|snapToGrid": 5,
+                        "cls": "nav",
+                        "height": 70,
+                        "html": [
+                            "<div>",
+                            "    <lu>",
+                            "        <li class=\"current\">TICKETS</li>",
+                            "        <li>TESTS</li>",
+                            "        <li>REPORTS</li>",
+                            "    </lu>",
+                            "</div>"
+                        ],
+                        "designer|displayName": "menu",
+                        "layout": "absolute"
                     },
-                    "designerId": "d4b9cf6e-5608-41ee-a470-bd74314a3081",
+                    "designerId": "617fb8bc-8d62-4533-8e91-fc4cbf713d17",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "finder",
+                                "componentCls": "container",
+                                "overCls": null,
+                                "designer|displayName": "finder"
+                            },
+                            "designerId": "9863e9fa-8425-4da1-8ffe-abbaddc757b6",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.ComboBox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "filterType",
+                                        "fieldLabel": "Find Tickets by",
+                                        "labelWidth": 90,
+                                        "blankText": "",
+                                        "emptyText": "Ticket Number",
+                                        "store": [
+                                            "[",
+                                            "    [1,\"Ticket Number\"],",
+                                            "    [1,\"Status\"],",
+                                            "    [1,\"Service ID\"],",
+                                            "    [1,\"Product Type\"],",
+                                            "    [1,\"Primary contact\"]",
+                                            "]"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "store": "array"
+                                    },
+                                    "designerId": "e37e93d1-2695-4c04-aefb-832def92e4bd"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "filterValue",
+                                        "fieldLabel": null
+                                    },
+                                    "designerId": "70912b73-e805-4675-8bfb-502ee2115049"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "filterbtn",
+                                        "text": "GO"
+                                    },
+                                    "designerId": "05a1e5c5-676e-4354-933d-c1d9404abdd1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": "cnt-body",
+                "id": null,
+                "designer|displayName": "cntBody"
+            },
+            "designerId": "484e5c3f-5739-4119-848c-42949f6e24f1",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "cnt-menuLeft",
+                        "designer|displayName": "cntMenuLeft"
+                    },
+                    "designerId": "d581ec80-7908-4468-87a2-48ba1a2630d9"
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "cont-Content",
+                        "designer|displayName": "cntContent"
+                    },
+                    "designerId": "307bdb69-7814-4855-ba85-e64aeae693e7",
                     "cn": [
                         {
                             "type": "Ext.grid.Panel",
@@ -348,7 +434,40 @@
                                     "designerId": "d919ff97-d96f-4452-8f81-6da2871e7b74"
                                 }
                             ]
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "cls": "mainContainer",
+                "layout": "absolute"
+            },
+            "designerId": "192ee74a-e732-4621-bc18-9b9bdf7543d6",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 170,
+                        "layout|y": 220,
+                        "height": 480,
+                        "layout": "card"
+                    },
+                    "designerId": "d4b9cf6e-5608-41ee-a470-bd74314a3081",
+                    "cn": [
                         {
                             "type": "Ext.panel.Panel",
                             "reference": {
@@ -481,106 +600,6 @@
                                             "designerId": "678d8996-705a-4f53-8963-5ef55d717332"
                                         }
                                     ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "Ext.container.Container",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "layout|x": 20,
-                        "layout|y": 120,
-                        "designer|snapToGrid": 5,
-                        "cls": "nav",
-                        "height": 70,
-                        "html": [
-                            "<div>",
-                            "    <lu>",
-                            "        <li class=\"current\">TICKETS</li>",
-                            "        <li>TESTS</li>",
-                            "        <li>REPORTS</li>",
-                            "    </lu>",
-                            "</div>"
-                        ],
-                        "designer|displayName": "menu",
-                        "layout": "absolute"
-                    },
-                    "designerId": "617fb8bc-8d62-4533-8e91-fc4cbf713d17",
-                    "cn": [
-                        {
-                            "type": "Ext.container.Container",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "cls": "finder",
-                                "componentCls": "container",
-                                "overCls": null,
-                                "designer|displayName": "finder"
-                            },
-                            "designerId": "9863e9fa-8425-4da1-8ffe-abbaddc757b6",
-                            "cn": [
-                                {
-                                    "type": "Ext.form.field.ComboBox",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "cls": "filterType",
-                                        "fieldLabel": "Find Tickets by",
-                                        "labelWidth": 90,
-                                        "blankText": "",
-                                        "emptyText": "Ticket Number",
-                                        "store": [
-                                            "[",
-                                            "    [1,\"Ticket Number\"],",
-                                            "    [1,\"Status\"],",
-                                            "    [1,\"Service ID\"],",
-                                            "    [1,\"Product Type\"],",
-                                            "    [1,\"Primary contact\"]",
-                                            "]"
-                                        ]
-                                    },
-                                    "configAlternates": {
-                                        "store": "array"
-                                    },
-                                    "designerId": "e37e93d1-2695-4c04-aefb-832def92e4bd"
-                                },
-                                {
-                                    "type": "Ext.form.field.Text",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "cls": "filterValue",
-                                        "fieldLabel": null
-                                    },
-                                    "designerId": "70912b73-e805-4675-8bfb-502ee2115049"
-                                },
-                                {
-                                    "type": "Ext.button.Button",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "cls": "filterbtn",
-                                        "text": "GO"
-                                    },
-                                    "designerId": "05a1e5c5-676e-4354-933d-c1d9404abdd1"
                                 }
                             ]
                         }

@@ -9,12 +9,12 @@
     "topInstanceFileMap": {
         "90086192-6446-4d0e-b502-349a09141e0a": {
             "paths": [
-                "metadata/view/MyViewport",
-                "app/view/override/MyViewport.js",
-                "app/view/MyViewport.js",
+                "metadata/view/vwpMain",
+                "app/view/override/vwpMain.js",
+                "app/view/vwpMain.js",
                 "app/view/Viewport.js"
             ],
-            "className": "MyViewport"
+            "className": "vwpMain"
         },
         "1ff7b364-c76f-414e-94e5-a0443cec1274": {
             "paths": [
