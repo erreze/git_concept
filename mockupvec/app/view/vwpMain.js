@@ -123,110 +123,119 @@ Ext.define('MyApp.view.vwpMain', {
                 {
                     xtype: 'container',
                     cls: 'cnt-body',
+                    layout: {
+                        type: 'card'
+                    },
                     items: [
                         {
                             xtype: 'container',
-                            cls: 'cnt-menuLeft',
+                            id: 'cntTickets',
                             items: [
                                 {
                                     xtype: 'container',
-                                    cls: 'filters',
+                                    cls: 'cnt-menuLeft',
                                     items: [
                                         {
                                             xtype: 'container',
-                                            cls: 'title',
+                                            cls: 'filters',
                                             items: [
                                                 {
-                                                    xtype: 'label',
-                                                    cls: '',
-                                                    text: 'Filters'
+                                                    xtype: 'container',
+                                                    cls: 'title',
+                                                    items: [
+                                                        {
+                                                            xtype: 'label',
+                                                            cls: '',
+                                                            text: 'Filters'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    xtype: 'container',
+                                                    cls: 'menu',
+                                                    html: '<label>Status</label>\n<ul>\n <li><input type="checkbox"/>Open (5)</li>\n <li><input type="checkbox"/>Closed (8)</li>\n</ul>'
+                                                },
+                                                {
+                                                    xtype: 'container',
+                                                    cls: 'menu',
+                                                    html: '<label>Recent updates</label>\n<ul>\n <li><input type="checkbox"/>Last 24 hours</li>\n <li><input type="checkbox"/>Last 48 hours</li>\n <li><input type="checkbox"/>Last 72 hours</li>\n</ul>'
+                                                },
+                                                {
+                                                    xtype: 'container',
+                                                    cls: 'menu',
+                                                    html: '<label>Title</label>\n<ul>\n <li><input type="checkbox"/>Primary Contact</li>\n <li><input type="checkbox"/>Issue type</li>\n <li><input type="checkbox"/>Issue product</li>\n</ul>'
+                                                },
+                                                {
+                                                    xtype: 'container',
+                                                    cls: 'menu',
+                                                    html: '<label>Date</label>\n<ul>\n <li>Created</li>\n <li>Last Updated</li>\n</ul>'
                                                 }
                                             ]
-                                        },
-                                        {
-                                            xtype: 'container',
-                                            cls: 'menu',
-                                            html: '<label>Status</label>\n<ul>\n <li><input type="checkbox"/>Open (5)</li>\n <li><input type="checkbox"/>Closed (8)</li>\n</ul>'
-                                        },
-                                        {
-                                            xtype: 'container',
-                                            cls: 'menu',
-                                            html: '<label>Recent updates</label>\n<ul>\n <li><input type="checkbox"/>Last 24 hours</li>\n <li><input type="checkbox"/>Last 48 hours</li>\n <li><input type="checkbox"/>Last 72 hours</li>\n</ul>'
-                                        },
-                                        {
-                                            xtype: 'container',
-                                            cls: 'menu',
-                                            html: '<label>Title</label>\n<ul>\n <li><input type="checkbox"/>Primary Contact</li>\n <li><input type="checkbox"/>Issue type</li>\n <li><input type="checkbox"/>Issue product</li>\n</ul>'
-                                        },
-                                        {
-                                            xtype: 'container',
-                                            cls: 'menu',
-                                            html: '<label>Date</label>\n<ul>\n <li>Created</li>\n <li>Last Updated</li>\n</ul>'
                                         }
                                     ]
-                                }
-                            ]
-                        },
-                        {
-                            xtype: 'container',
-                            cls: 'cont-Content',
-                            items: [
+                                },
                                 {
-                                    xtype: 'gridpanel',
-                                    height: 480,
-                                    store: 'MyJsonStore',
-                                    columns: [
+                                    xtype: 'container',
+                                    cls: 'cont-Content',
+                                    items: [
                                         {
-                                            xtype: 'gridcolumn',
-                                            renderer: function(value, metaData, record, rowIndex, colIndex, store, view) {
-                                                console.log( record.data);
-                                                if ( record.data.flag == 1 ){
-                                                    return '<img class = "fotoGrid" src="http://localhost/git_concept/mockupvec/static/images/flagOn.png">';
-                                                }else{
-                                                    return '<img class = "fotoGrid" src="http://localhost/git_concept/mockupvec/static/images/flagOff.png">';
-                                                }
+                                            xtype: 'gridpanel',
+                                            height: 480,
+                                            store: 'MyJsonStore',
+                                            columns: [
+                                                {
+                                                    xtype: 'gridcolumn',
+                                                    renderer: function(value, metaData, record, rowIndex, colIndex, store, view) {
+                                                        console.log( record.data);
+                                                        if ( record.data.flag == 1 ){
+                                                            return '<img class = "fotoGrid" src="http://localhost/git_concept/mockupvec/static/images/flagOn.png">';
+                                                        }else{
+                                                            return '<img class = "fotoGrid" src="http://localhost/git_concept/mockupvec/static/images/flagOff.png">';
+                                                        }
 
-                                            },
-                                            dataIndex: 'flag',
-                                            text: 'Flag'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            renderer: function(value, metaData, record, rowIndex, colIndex, store, view) {
-                                                return '<a href = "#" id = "ticketNumber">' + record.data.ticketNumber + '</a>';
-                                            },
-                                            dataIndex: 'ticketNumber',
-                                            text: 'Ticket Number'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            dataIndex: 'status',
-                                            text: 'Status'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            dataIndex: 'serviceID',
-                                            text: 'Service ID'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            dataIndex: 'issueType',
-                                            text: 'Issuetype'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            dataIndex: 'productType',
-                                            text: 'Producttype'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            dataIndex: 'createdDate',
-                                            text: 'createdDate'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            dataIndex: 'primaryContact',
-                                            text: 'primaryContact'
+                                                    },
+                                                    dataIndex: 'flag',
+                                                    text: 'Flag'
+                                                },
+                                                {
+                                                    xtype: 'gridcolumn',
+                                                    renderer: function(value, metaData, record, rowIndex, colIndex, store, view) {
+                                                        return '<a href = "#" id = "ticketNumber">' + record.data.ticketNumber + '</a>';
+                                                    },
+                                                    dataIndex: 'ticketNumber',
+                                                    text: 'Ticket Number'
+                                                },
+                                                {
+                                                    xtype: 'gridcolumn',
+                                                    dataIndex: 'status',
+                                                    text: 'Status'
+                                                },
+                                                {
+                                                    xtype: 'gridcolumn',
+                                                    dataIndex: 'serviceID',
+                                                    text: 'Service ID'
+                                                },
+                                                {
+                                                    xtype: 'gridcolumn',
+                                                    dataIndex: 'issueType',
+                                                    text: 'Issuetype'
+                                                },
+                                                {
+                                                    xtype: 'gridcolumn',
+                                                    dataIndex: 'productType',
+                                                    text: 'Producttype'
+                                                },
+                                                {
+                                                    xtype: 'gridcolumn',
+                                                    dataIndex: 'createdDate',
+                                                    text: 'createdDate'
+                                                },
+                                                {
+                                                    xtype: 'gridcolumn',
+                                                    dataIndex: 'primaryContact',
+                                                    text: 'primaryContact'
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
