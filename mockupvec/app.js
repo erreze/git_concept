@@ -28,7 +28,7 @@ Ext.application({
         'ticketDetail'
     ],
     views: [
-        'MyViewport'
+        'vwpMain'
     ],
     autoCreateViewport: true,
     controllers: [

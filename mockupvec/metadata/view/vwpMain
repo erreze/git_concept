@@ -6,7 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "MyViewport",
+        "id": "vwpMain",
+        "designer|userClassName": "vwpMain",
         "designer|initialView": true,
         "autoScroll": true
     },

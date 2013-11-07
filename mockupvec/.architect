@@ -202,14 +202,14 @@
         ]
     },
     "canvasState": {
-        "topInstance": null
+        "topInstance": "90086192-6446-4d0e-b502-349a09141e0a"
     },
     "inspectorState": {
         "topInstance": "90086192-6446-4d0e-b502-349a09141e0a",
-        "selectedInstance": "7bfabcb9-3d46-40b8-89dc-524538578561"
+        "selectedInstance": "90086192-6446-4d0e-b502-349a09141e0a"
     },
     "codeState": {
         "topInstance": "90086192-6446-4d0e-b502-349a09141e0a"
     },
-    "editMode": "code"
+    "editMode": "design"
 }
