@@ -1,8 +1,50 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0; outline: 0; font-size: 100%; margin: 0; padding: 0; }
+body { background: #fff; color: #333; font: 12px arial; }
+
+span, div {
+	display:block!important;
+}
+
+.home {
+    background:#F2F2F2;
+	color:#808080!important;
+}
+.cont-header {
+	background:white;
+	display:block!important;
+    height:100px;
+    width:1250px;
+    margin: 0 auto 0;
+}
+.cnt-logo {
+	background:#BEBEB6;
+    float:left;
+    height:100px;
+    width:120px;
+    border-radius: 0 0 0 25px;
+}
+.cnt-logo #imgVzLogo {
+	height:60px;
+    width:103px;
+    margin:20px 0 0 12px;
+}
+.cnt-title {
+    background:white;
+    float:left;
+    width:1130px;
+	padding:60px 20px 20px 20px;
+}
+.cnt-title #lblRepairs {
+    font:20px tahoma,arial,verdana,sans-serif;
+}
+
+
+
+/******/
 .mainContainer{
 	width: 100%;
     height : 100%;
     background-color: white;
-    padding-right: 50px;
 }
 
 .headerVec{
@@ -11,10 +53,18 @@
     height: 100px;
  	margin-right : 20px;
     background-color: white;
-    width:100%;
 }
 
 .repairsTitle{
 	font-size: 18px;
     color: gray;
+}
+
+.ticketDetail{
+    padding:10px;
+    font-weight:bold;
+}
+
+.ticketDetailPanel{
+    padding:0px;
 }

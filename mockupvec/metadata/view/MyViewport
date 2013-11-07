@@ -294,9 +294,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|snapToGrid": 5,
                         "layout|x": 20,
                         "layout|y": 120,
+                        "designer|snapToGrid": 5,
                         "cls": "nav",
                         "height": 70,
                         "html": [
