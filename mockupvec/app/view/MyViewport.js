@@ -16,6 +16,9 @@
 Ext.define('MyApp.view.MyViewport', {
     extend: 'Ext.container.Viewport',
 
+    cls: 'home',
+    id: 'vwpMain',
+
     initComponent: function() {
         var me = this;
 
@@ -23,38 +26,50 @@ Ext.define('MyApp.view.MyViewport', {
             items: [
                 {
                     xtype: 'container',
+                    cls: 'cont-header',
+                    id: 'cntHeader',
+                    items: [
+                        {
+                            xtype: 'container',
+                            cls: 'cnt-logo',
+                            id: 'cntLogo',
+                            items: [
+                                {
+                                    xtype: 'image',
+                                    id: 'imgVzLogo',
+                                    src: 'static/images/vz-logo.png'
+                                }
+                            ]
+                        },
+                        {
+                            xtype: 'container',
+                            cls: 'cnt-title',
+                            id: 'cntTitle',
+                            items: [
+                                {
+                                    xtype: 'label',
+                                    id: 'lblRepairs',
+                                    text: 'REPAIRS'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    xtype: 'container',
+                    id: 'cntAccess'
+                },
+                {
+                    xtype: 'container',
+                    id: 'cntBody'
+                },
+                {
+                    xtype: 'container',
                     cls: 'mainContainer',
                     layout: {
                         type: 'absolute'
                     },
                     items: [
-                        {
-                            xtype: 'container',
-                            x: 20,
-                            y: 0,
-                            cls: 'headerVec',
-                            height: 110,
-                            layout: {
-                                type: 'absolute'
-                            },
-                            items: [
-                                {
-                                    xtype: 'image',
-                                    x: 0,
-                                    y: 0,
-                                    height: 110,
-                                    width: 130,
-                                    src: 'static/images/logoVerizon.jpg'
-                                },
-                                {
-                                    xtype: 'label',
-                                    x: 150,
-                                    y: 70,
-                                    cls: 'repairsTitle',
-                                    text: 'REPAIRS'
-                                }
-                            ]
-                        },
                         {
                             xtype: 'container',
                             x: 170,
