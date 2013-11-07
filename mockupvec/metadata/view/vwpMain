@@ -606,6 +606,20 @@
                     ]
                 }
             ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "cls": "mainContainer",
+                "layout": "absolute"
+            },
+            "designerId": "192ee74a-e732-4621-bc18-9b9bdf7543d6"
         }
     ]
 }
