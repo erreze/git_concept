@@ -72,12 +72,37 @@
             },
             "codeClass": null,
             "userConfig": {
-                "height": 480,
+                "id": "cntAccess"
+            },
+            "designerId": "5f699731-a3de-4ec9-a954-3aea02ac429d"
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeItem": 1,
+                "height": null,
                 "id": "cntBody",
                 "layout": "card"
             },
             "designerId": "d4b9cf6e-5608-41ee-a470-bd74314a3081",
             "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "cntTickets"
+                    },
+                    "designerId": "d21c9cf7-111e-4def-afe1-e60040b791dd"
+                },
                 {
                     "type": "Ext.container.Container",
                     "reference": {

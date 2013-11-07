@@ -52,12 +52,20 @@ Ext.define('MyApp.view.vwpMain', {
                 },
                 {
                     xtype: 'container',
-                    height: 480,
+                    id: 'cntAccess'
+                },
+                {
+                    xtype: 'container',
+                    activeItem: 1,
                     id: 'cntBody',
                     layout: {
                         type: 'card'
                     },
                     items: [
+                        {
+                            xtype: 'container',
+                            id: 'cntTickets'
+                        },
                         {
                             xtype: 'container',
                             id: 'cntTicketDetails',
