@@ -26,108 +26,42 @@ Ext.define('MyApp.view.vwpMain', {
             items: [
                 {
                     xtype: 'container',
-                    cls: 'mainContainer',
-                    height: 800,
+                    cls: 'headerVec',
+                    height: 110,
+                    id: 'cntHeader',
                     layout: {
                         type: 'absolute'
                     },
                     items: [
                         {
-                            xtype: 'container',
-                            x: 20,
+                            xtype: 'image',
+                            x: 0,
                             y: 0,
-                            cls: 'headerVec',
                             height: 110,
-                            layout: {
-                                type: 'absolute'
-                            },
-                            items: [
-                                {
-                                    xtype: 'image',
-                                    x: 0,
-                                    y: 0,
-                                    height: 110,
-                                    width: 130,
-                                    src: 'static/images/logoVerizon.jpg'
-                                },
-                                {
-                                    xtype: 'label',
-                                    x: 150,
-                                    y: 70,
-                                    cls: 'repairsTitle',
-                                    text: 'REPAIRS'
-                                }
-                            ]
+                            width: 130,
+                            src: 'static/images/logoVerizon.jpg'
                         },
                         {
+                            xtype: 'label',
+                            x: 150,
+                            y: 70,
+                            cls: 'repairsTitle',
+                            text: 'REPAIRS'
+                        }
+                    ]
+                },
+                {
+                    xtype: 'container',
+                    height: 480,
+                    id: 'cntBody',
+                    layout: {
+                        type: 'card'
+                    },
+                    items: [
+                        {
                             xtype: 'container',
-                            x: 170,
-                            y: 220,
-                            activeItem: 1,
-                            height: 480,
-                            layout: {
-                                type: 'card'
-                            },
+                            id: 'cntTicketDetails',
                             items: [
-                                {
-                                    xtype: 'gridpanel',
-                                    height: 480,
-                                    store: 'MyJsonStore',
-                                    columns: [
-                                        {
-                                            xtype: 'gridcolumn',
-                                            renderer: function(value, metaData, record, rowIndex, colIndex, store, view) {
-                                                console.log( record.data);
-                                                if ( record.data.flag == 1 ){
-                                                    return '<img class = "fotoGrid" src="http://localhost/git_concept/mockupvec/static/images/flagOn.png">';
-                                                }else{
-                                                    return '<img class = "fotoGrid" src="http://localhost/git_concept/mockupvec/static/images/flagOff.png">';
-                                                }
-
-                                            },
-                                            dataIndex: 'flag',
-                                            text: 'Flag'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            renderer: function(value, metaData, record, rowIndex, colIndex, store, view) {
-                                                return '<a href = "#" id = "ticketNumber">' + record.data.ticketNumber + '</a>';
-                                            },
-                                            dataIndex: 'ticketNumber',
-                                            text: 'Ticket Number'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            dataIndex: 'status',
-                                            text: 'Status'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            dataIndex: 'serviceID',
-                                            text: 'Service ID'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            dataIndex: 'issueType',
-                                            text: 'Issuetype'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            dataIndex: 'productType',
-                                            text: 'Producttype'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            dataIndex: 'createdDate',
-                                            text: 'createdDate'
-                                        },
-                                        {
-                                            xtype: 'gridcolumn',
-                                            dataIndex: 'primaryContact',
-                                            text: 'primaryContact'
-                                        }
-                                    ]
-                                },
                                 {
                                     xtype: 'panel',
                                     cls: 'ticketDetailPanel',
@@ -195,7 +129,13 @@ Ext.define('MyApp.view.vwpMain', {
                                             xtype: 'panel',
                                             cls: 'ticketDetailPanel',
                                             html: 'Ticket Log',
-                                            bodyCls: 'acccls',
+                                            bodyCls: [
+                                                'acccls',
+                                                'x-panel-body-default',
+                                                'x-collapsed',
+                                                'x-panel-body-collapsed',
+                                                'x-panel-body-default-collapsed'
+                                            ],
                                             collapsed: true,
                                             collapsible: true,
                                             title: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ticket Log',
@@ -205,7 +145,13 @@ Ext.define('MyApp.view.vwpMain', {
                                             xtype: 'panel',
                                             cls: 'ticketDetailPanel',
                                             html: 'Service Information',
-                                            bodyCls: 'acccls',
+                                            bodyCls: [
+                                                'acccls',
+                                                'x-panel-body-default',
+                                                'x-collapsed',
+                                                'x-panel-body-collapsed',
+                                                'x-panel-body-default-collapsed'
+                                            ],
                                             collapsed: true,
                                             collapsible: true,
                                             title: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Service Information',
