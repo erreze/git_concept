@@ -197,6 +197,131 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "cnt-toolbar",
+                        "designer|displayName": "cntToolbar"
+                    },
+                    "designerId": "fbeb4f49-610a-44bb-8b4d-630a4d90c56d",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "cnt-createticket",
+                                "designer|displayName": "cntCreateTicket"
+                            },
+                            "designerId": "2bd19f5e-f8a7-4749-afc7-1776bae113ee",
+                            "cn": [
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "cntCreate",
+                                        "designer|displayName": "cntCreate"
+                                    },
+                                    "designerId": "937c6362-3c10-4c74-9bba-895c50932736",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "id": "lblCreate",
+                                                "text": "Create tickets"
+                                            },
+                                            "designerId": "e19baa8d-06b2-45a8-ae15-aea91ef2967c"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "btnCreateTicket",
+                                        "text": null
+                                    },
+                                    "designerId": "a8082590-f439-4a39-8744-11f0c85e1dac"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": "cnt-tools",
+                                "designer|displayName": "cntTools"
+                            },
+                            "designerId": "e613c97f-a33a-4335-858c-93720e9303b1",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "btnExport",
+                                        "text": null
+                                    },
+                                    "designerId": "20a3e14d-c217-4310-9575-0b90581a7be3"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "btnCustomize",
+                                        "text": null
+                                    },
+                                    "designerId": "3a8f0ddb-0a47-4b73-888b-4dff4f3e32a2"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "btnRefresh",
+                                        "text": null
+                                    },
+                                    "designerId": "cc53f520-cd87-4027-81c2-234984e2d49b"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -235,7 +360,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "cls": "cont-Content",
+                        "cls": "cnt-content",
                         "designer|displayName": "cntContent"
                     },
                     "designerId": "307bdb69-7814-4855-ba85-e64aeae693e7",

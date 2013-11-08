@@ -116,6 +116,51 @@ Ext.define('MyApp.view.vwpMain', {
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            xtype: 'container',
+                            cls: 'cnt-toolbar',
+                            items: [
+                                {
+                                    xtype: 'container',
+                                    cls: 'cnt-createticket',
+                                    items: [
+                                        {
+                                            xtype: 'container',
+                                            id: 'cntCreate',
+                                            items: [
+                                                {
+                                                    xtype: 'label',
+                                                    id: 'lblCreate',
+                                                    text: 'Create tickets'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            id: 'btnCreateTicket'
+                                        }
+                                    ]
+                                },
+                                {
+                                    xtype: 'container',
+                                    cls: 'cnt-tools',
+                                    items: [
+                                        {
+                                            xtype: 'button',
+                                            id: 'btnExport'
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            id: 'btnCustomize'
+                                        },
+                                        {
+                                            xtype: 'button',
+                                            id: 'btnRefresh'
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },
@@ -129,7 +174,7 @@ Ext.define('MyApp.view.vwpMain', {
                         },
                         {
                             xtype: 'container',
-                            cls: 'cont-Content',
+                            cls: 'cnt-content',
                             items: [
                                 {
                                     xtype: 'gridpanel',

@@ -40,31 +40,90 @@ span, div {
 .cnt-access {
 	background:white;
 	display:block!important;
-    height:80px;
+    height:110px;
     width:1250px;
     margin: 0 auto 0;
 }
+.cnt-toolbar {
+	height:40px;
+    display:block!important;
+}
+.cnt-createticket {
+	height:40px;
+    width:210px;
+    float:left;
+}
+.cnt-createticket #btnCreateTicket {
+	border-radius: 50%;
+    position:absolute;
+    width: 40px!important;
+    height: 40px!important;
+    background: #BBB url('../img/vz-logo.pngc') no-repeat !important;
+    border-width:4px;
+    border-color:white!important;
+}
+.cnt-createticket #cntCreate {
+	height:26px;
+    width:190px;
+    margin-top:7px;
+    margin-left:20px;
+    background:#BBB;
+    position:absolute;
+    padding-left:27px;
+    padding-top:4px;
+    font:14px Arial, sans-serif;
+    color:white;
+}
+.cnt-tools {
+	height:40px;
+    width:1040px;
+    float:left;
+    padding:8px 10px;
+    display:block!important;
+}
+.cnt-tools #btnExport {
+    width: 25px!important;
+    background: white url('../static/images/refresh.jpg') no-repeat !important;
+    height: 25px!important;
+    float:right;
+    border:none;
+    margin-left:4px;
+}
+.cnt-tools #btnCustomize {
+    width: 25px!important;
+    background: white url('../static/images/customize.jpg') no-repeat !important;
+    height: 25px!important;
+    float:right;
+    border:none;
+    margin-left:4px;
+}
+.cnt-tools #btnRefresh {
+    width: 25px!important;
+    background: white url('../static/images/export.jpg') no-repeat !important;
+    height: 25px!important;
+    float:right;
+    border:none;
+    margin-left:4px;
+}
 .cnt-body {
-	background:red;
+	background:white;
 	display:block!important;
     width:1250px;
     margin: 0 auto 0;
     height:100%;
 }
 .cnt-menuLeft {
-	background:green;
 	display:block!important;
     height:500px;
     width:210px;
     float:left;
 }
-.cont-Content {
-	background:blue;
+.cnt-content {
 	display:block!important;
     height:100%;
     width:1040px;
     float:left;
-    padding:10px;
+    padding:0 10px;
 }
 
 
