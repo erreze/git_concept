@@ -350,7 +350,134 @@
                         "cls": "cnt-menuLeft",
                         "designer|displayName": "cntMenuLeft"
                     },
-                    "designerId": "d581ec80-7908-4468-87a2-48ba1a2630d9"
+                    "designerId": "d581ec80-7908-4468-87a2-48ba1a2630d9",
+                    "cn": [
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": "filters",
+                                        "designer|displayName": "filters"
+                                    },
+                                    "designerId": "8aea6169-3c1d-4696-b46b-c30aaac3aa2c",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.container.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": "title",
+                                                "designer|displayName": "title"
+                                            },
+                                            "designerId": "af32addb-856d-4abb-86e8-1cc6aefa6ce5",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.Label",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "cls": "",
+                                                        "text": "Filters"
+                                                    },
+                                                    "designerId": "0a621f77-90e6-49c0-9d69-177bab45cfd6"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.container.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": "menu",
+                                                "html": [
+                                                    "<label>Status</label>",
+                                                    "<ul>",
+                                                    " <li><input type=\"checkbox\"/>Open (5)</li>",
+                                                    " <li><input type=\"checkbox\"/>Closed (8)</li>",
+                                                    "</ul>"
+                                                ],
+                                                "designer|displayName": "status"
+                                            },
+                                            "designerId": "98e2fdd9-ecd5-4f3d-936d-feb7625fe6f1"
+                                        },
+                                        {
+                                            "type": "Ext.container.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": "menu",
+                                                "html": [
+                                                    "<label>Recent updates</label>",
+                                                    "<ul>",
+                                                    " <li><input type=\"checkbox\"/>Last 24 hours</li>",
+                                                    " <li><input type=\"checkbox\"/>Last 48 hours</li>",
+                                                    " <li><input type=\"checkbox\"/>Last 72 hours</li>",
+                                                    "</ul>"
+                                                ],
+                                                "designer|displayName": "updates"
+                                            },
+                                            "designerId": "03b2247c-7b68-4ab3-aaa1-6583dbee1da9"
+                                        },
+                                        {
+                                            "type": "Ext.container.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": "menu",
+                                                "html": [
+                                                    "<label>Title</label>",
+                                                    "<ul>",
+                                                    " <li><input type=\"checkbox\"/>Primary Contact</li>",
+                                                    " <li><input type=\"checkbox\"/>Issue type</li>",
+                                                    " <li><input type=\"checkbox\"/>Issue product</li>",
+                                                    "</ul>"
+                                                ],
+                                                "designer|displayName": "title"
+                                            },
+                                            "designerId": "ea6dfca6-db73-4389-974d-5cd51803cd9c"
+                                        },
+                                        {
+                                            "type": "Ext.container.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": "menu",
+                                                "html": [
+                                                    "<label>Date</label>",
+                                                    "<ul>",
+                                                    " <li>Created</li>",
+                                                    " <li>Last Updated</li>",
+                                                    "</ul>"
+                                                ],
+                                                "designer|displayName": "date"
+                                            },
+                                            "designerId": "75f1e774-d0c9-4cd6-9655-f4dc1e9a68bc"
+                                        }
+                                    ]
+                                }
+                            ]
                 },
                 {
                     "type": "Ext.container.Container",
