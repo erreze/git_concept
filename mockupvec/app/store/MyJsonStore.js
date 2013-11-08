@@ -29,7 +29,7 @@ Ext.define('MyApp.store.MyJsonStore', {
             storeId: 'MyJsonStore',
             proxy: {
                 type: 'ajax',
-                url: 'http://localhost/git_concept/mockupvec/data/tickets.json',
+                url: '../mockupvec/data/tickets.json',
                 reader: {
                     type: 'json',
                     root: 'tickets'

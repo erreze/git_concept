@@ -21,7 +21,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "http://localhost/git_concept/mockupvec/data/tickets.json"
+                "url": "../mockupvec/data/tickets.json"
             },
             "designerId": "886b2f95-d656-47bc-96bf-ea71f6262a16",
             "cn": [

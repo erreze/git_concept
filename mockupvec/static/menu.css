@@ -28,8 +28,7 @@
 	float:right;
     display:inline-block;
     background-color:rgb(230, 230, 230);
-    width:480px;
-    padding-left:30px;
+    width:500px;
 }
 .nav .finder>span>div .filterType,.filterValue,.filterbtn{
     float:left;
@@ -56,4 +55,12 @@
 .nav lu li:hover{
     color:red;
     cursor:pointer;
+}
+.nav .fill{
+    padding-left:20px;
+    width: 27px;
+    height: 27px;
+    border-top: 27px solid rgb(230, 230, 230);
+    border-left: 27px solid white;
+    float:left;
 }
