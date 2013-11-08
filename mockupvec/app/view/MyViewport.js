@@ -34,7 +34,6 @@ Ext.define('MyApp.view.MyViewport', {
                             y: 0,
                             cls: 'headerVec',
                             height: 110,
-                            width: 560,
                             layout: {
                                 type: 'absolute'
                             },
@@ -57,62 +56,121 @@ Ext.define('MyApp.view.MyViewport', {
                             ]
                         },
                         {
-                            xtype: 'gridpanel',
+                            xtype: 'container',
                             x: 170,
                             y: 220,
-                            store: 'MyJsonStore',
-                            columns: [
+                            height: 480,
+                            layout: {
+                                type: 'card'
+                            },
+                            items: [
                                 {
-                                    xtype: 'gridcolumn',
-                                    renderer: function(value, metaData, record, rowIndex, colIndex, store, view) {
-                                        console.log( record.data);
-                                        if ( record.data.flag == 1 ){
-                                            return '<img class = "fotoGrid" src="http://localhost/git_concept/mockupvec/static/images/flagOn.png">';
-                                        }else{
-                                            return '<img class = "fotoGrid" src="http://localhost/git_concept/mockupvec/static/images/flagOff.png">';
-                                        }
+                                    xtype: 'gridpanel',
+                                    height: 480,
+                                    store: 'MyJsonStore',
+                                    columns: [
+                                        {
+                                            xtype: 'gridcolumn',
+                                            renderer: function(value, metaData, record, rowIndex, colIndex, store, view) {
+                                                console.log( record.data);
+                                                if ( record.data.flag == 1 ){
+                                                    return '<img class = "fotoGrid" src="http://localhost/git_concept/mockupvec/static/images/flagOn.png">';
+                                                }else{
+                                                    return '<img class = "fotoGrid" src="http://localhost/git_concept/mockupvec/static/images/flagOff.png">';
+                                                }
 
-                                    },
-                                    dataIndex: 'flag',
-                                    text: 'Flag'
+                                            },
+                                            dataIndex: 'flag',
+                                            text: 'Flag'
+                                        },
+                                        {
+                                            xtype: 'gridcolumn',
+                                            renderer: function(value, metaData, record, rowIndex, colIndex, store, view) {
+                                                return '<a href = "#" id = "ticketNumber">' + record.data.ticketNumber + '</a>';
+                                            },
+                                            dataIndex: 'ticketNumber',
+                                            text: 'Ticket Number'
+                                        },
+                                        {
+                                            xtype: 'gridcolumn',
+                                            dataIndex: 'status',
+                                            text: 'Status'
+                                        },
+                                        {
+                                            xtype: 'gridcolumn',
+                                            dataIndex: 'serviceID',
+                                            text: 'Service ID'
+                                        },
+                                        {
+                                            xtype: 'gridcolumn',
+                                            dataIndex: 'issueType',
+                                            text: 'Issuetype'
+                                        },
+                                        {
+                                            xtype: 'gridcolumn',
+                                            dataIndex: 'productType',
+                                            text: 'Producttype'
+                                        },
+                                        {
+                                            xtype: 'gridcolumn',
+                                            dataIndex: 'createdDate',
+                                            text: 'createdDate'
+                                        },
+                                        {
+                                            xtype: 'gridcolumn',
+                                            dataIndex: 'primaryContact',
+                                            text: 'primaryContact'
+                                        }
+                                    ]
                                 },
                                 {
-                                    xtype: 'gridcolumn',
-                                    renderer: function(value, metaData, record, rowIndex, colIndex, store, view) {
-                                        return '<a href = "#" id = "ticketNumber">' + record.data.ticketNumber + '</a>';
-                                    },
-                                    dataIndex: 'ticketNumber',
-                                    text: 'Ticket Number'
-                                },
-                                {
-                                    xtype: 'gridcolumn',
-                                    dataIndex: 'status',
-                                    text: 'Status'
-                                },
-                                {
-                                    xtype: 'gridcolumn',
-                                    dataIndex: 'serviceID',
-                                    text: 'Service ID'
-                                },
-                                {
-                                    xtype: 'gridcolumn',
-                                    dataIndex: 'issueType',
-                                    text: 'Issuetype'
-                                },
-                                {
-                                    xtype: 'gridcolumn',
-                                    dataIndex: 'productType',
-                                    text: 'Producttype'
-                                },
-                                {
-                                    xtype: 'gridcolumn',
-                                    dataIndex: 'createdDate',
-                                    text: 'createdDate'
-                                },
-                                {
-                                    xtype: 'gridcolumn',
-                                    dataIndex: 'primaryContact',
-                                    text: 'primaryContact'
+                                    xtype: 'panel',
+                                    header: false,
+                                    title: 'My Panel',
+                                    items: [
+                                        {
+                                            xtype: 'container',
+                                            cls: 'ticketDetail',
+                                            items: [
+                                                {
+                                                    xtype: 'label',
+                                                    text: 'Ticket'
+                                                },
+                                                {
+                                                    xtype: 'label'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            xtype: 'dataview',
+                                            itemSelector: 'div'
+                                        },
+                                        {
+                                            xtype: 'panel',
+                                            cls: 'ticketDetailPanel',
+                                            layout: {
+                                                type: 'accordion'
+                                            },
+                                            header: false,
+                                            title: 'My Panel',
+                                            items: [
+                                                {
+                                                    xtype: 'panel',
+                                                    html: 'Ticket Log',
+                                                    collapsed: false,
+                                                    collapsible: false,
+                                                    title: 'Ticket Log',
+                                                    titleCollapse: true
+                                                },
+                                                {
+                                                    xtype: 'panel',
+                                                    html: 'Service Information',
+                                                    title: 'Service Information',
+                                                    titleCollapse: true
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         }
