@@ -507,6 +507,80 @@
                     "designerId": "307bdb69-7814-4855-ba85-e64aeae693e7",
                     "cn": [
                         {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "designerId": "d78c607b-376d-45d5-82b0-5fd422983496",
+                            "cn": [
+                                {
+                                    "type": "Ext.chart.Chart",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 250,
+                                        "width": 400,
+                                        "animate": [
+                                            "true"
+                                        ],
+                                        "insetPadding": 20,
+                                        "store": "MyJsonStore1"
+                                    },
+                                    "designerId": "46fa98d1-6eb5-49c5-b7d7-2b47b54b68ec",
+                                    "isBuiltIn": true,
+                                    "iconCls": "icon-pie-chart",
+                                    "autoName": "PieChart",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.chart.series.Pie",
+                                            "reference": {
+                                                "name": "series",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "label": [
+                                                    "{'field':'x','display':'rotate','contrast':true,'font':'12px Arial'}"
+                                                ],
+                                                "showInLegend": true,
+                                                "angleField": "y"
+                                            },
+                                            "designerId": "61fdd5c4-72ac-43dc-b540-4b8f8d44e922",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "renderer",
+                                                        "designer|params": [
+                                                            "sprite",
+                                                            "record",
+                                                            "attributes",
+                                                            "index",
+                                                            "store"
+                                                        ],
+                                                        "implHandler": [
+                                                            "console.log(store);"
+                                                        ]
+                                                    },
+                                                    "designerId": "fe083415-a522-470f-ac61-0d4b58e3a593"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
                             "type": "Ext.grid.Panel",
                             "reference": {
                                 "name": "items",

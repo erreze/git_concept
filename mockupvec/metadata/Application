@@ -7,10 +7,13 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "MyModel"
+            "MyModel",
+            "Status"
         ],
         "stores": [
-            "MyJsonStore"
+            "MyJsonStore",
+            "MyJsonStore1",
+            "MyJsonStore2"
         ],
         "views": [
             "vwpMain"

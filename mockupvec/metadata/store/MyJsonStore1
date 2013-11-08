@@ -1,0 +1,40 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "Status",
+        "storeId": "Status",
+        "designer|userClassName": "MyJsonStore1"
+    },
+    "designerId": "06a59a8d-e9b9-42ef-aa70-8bf296bf1a4c",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "../mockupvec/data/status.json"
+            },
+            "designerId": "c318a94d-ab42-4e7d-a2fe-6f0325a55d4e",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "f75cad82-12ac-40be-b8fb-29e782c20191"
+                }
+            ]
+        }
+    ]
+}

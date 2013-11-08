@@ -63,20 +63,56 @@
                 "metadata/resource/css2"
             ],
             "className": "css2"
+        },
+        "68d65023-f7cb-47ec-a3a0-8e169fd2480d": {
+            "paths": [
+                "metadata/view/MyClass",
+                "app/view/override/MyClass.js",
+                "app/view/MyClass.js"
+            ],
+            "className": "MyClass"
+        },
+        "06a59a8d-e9b9-42ef-aa70-8bf296bf1a4c": {
+            "paths": [
+                "metadata/store/MyJsonStore1",
+                "app/store/override/MyJsonStore1.js",
+                "app/store/MyJsonStore1.js"
+            ],
+            "className": "MyJsonStore1"
+        },
+        "33946b00-5739-48c7-8c7f-363151ebdd4c": {
+            "paths": [
+                "metadata/model/Status",
+                "app/model/override/Status.js",
+                "app/model/Status.js"
+            ],
+            "className": "Status"
+        },
+        "816651f1-6306-4ec6-87ef-012d000dec3b": {
+            "paths": [
+                "metadata/store/MyJsonStore2",
+                "app/store/override/MyJsonStore2.js",
+                "app/store/MyJsonStore2.js"
+            ],
+            "className": "MyJsonStore2"
         }
     },
     "viewOrderMap": {
         "view": [
-            "90086192-6446-4d0e-b502-349a09141e0a"
+            "90086192-6446-4d0e-b502-349a09141e0a",
+            "68d65023-f7cb-47ec-a3a0-8e169fd2480d"
         ],
         "store": [
-            "0eddcded-28ed-48d8-9a5a-9cb2332c6dae"
+            "0eddcded-28ed-48d8-9a5a-9cb2332c6dae",
+            "06a59a8d-e9b9-42ef-aa70-8bf296bf1a4c",
+            "816651f1-6306-4ec6-87ef-012d000dec3b"
         ],
         "controller": [
             "c34d36ff-dfa8-40de-97ad-c2b08790e943"
         ],
         "model": [
-            "617f4024-0e36-4d7d-a02e-a8421cda1c5c"
+            "617f4024-0e36-4d7d-a02e-a8421cda1c5c",
+            "33946b00-5739-48c7-8c7f-363151ebdd4c"
         ],
         "resource": [
             "1ff7b364-c76f-414e-94e5-a0443cec1274",

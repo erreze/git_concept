@@ -222,6 +222,35 @@ Ext.define('MyApp.view.vwpMain', {
                             cls: 'cnt-content',
                             items: [
                                 {
+                                    xtype: 'container',
+                                    items: [
+                                        {
+                                            xtype: 'chart',
+                                            height: 250,
+                                            width: 400,
+                                            animate: true,
+                                            insetPadding: 20,
+                                            store: 'MyJsonStore1',
+                                            series: [
+                                                {
+                                                    type: 'pie',
+                                                    renderer: function(sprite, record, attributes, index, store) {
+                                                        console.log(store);
+                                                    },
+                                                    label: {
+                                                        field: 'x',
+                                                        display: 'rotate',
+                                                        contrast: true,
+                                                        font: '12px Arial'
+                                                    },
+                                                    showInLegend: true,
+                                                    angleField: 'y'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
                                     xtype: 'gridpanel',
                                     height: 480,
                                     store: 'MyJsonStore',

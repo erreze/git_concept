@@ -1,0 +1,10 @@
+[
+	{
+        "name": "active",
+        "percent": 33
+    },
+    {
+        "name": "inactive",
+        "percent": 67
+    }
+]
